@@ -368,7 +368,7 @@ function markdownToPdf(md) {
 // calls it by name. Bare chat — including bare no-prefix commands like "ping"
 // — is NOT "addressed", so PLOGME never answers on top of the router's reply.
 // (@crysnovax—FIX12-08-26)
-function isAddressed(sock, m) {
+function isAddressed(sock, m, options = {}) {
     try {
         const mentioned = (m.mentionedJid || []).map(j => String(j).replace(/:\d+@/, '@'));
         const botJid = String(sock?.user?.id || '').replace(/:\d+@/, '@');
@@ -380,9 +380,9 @@ function isAddressed(sock, m) {
             || m?.quoted?.message?.conversation
             || ''
         );
-        if (quotedText && quotedText.includes(MARKER)) return true;
+        if (options.allowQuote !== false && quotedText && quotedText.includes(MARKER)) return true;
         const qSender = m?.quoted?.sender || m?.quoted?.key?.participant;
-        if (qSender) {
+        if (options.allowQuote !== false && qSender) {
             const qs = String(qSender).replace(/:\d+@/, '@');
             if (qs === botJid || (lid && qs === String(lid).replace(/:\d+@/, '@'))) return true;
         }
@@ -783,7 +783,29 @@ async function runCommandAction(sock, m, opts, target) {
         });
         return true;
     } catch (e) {
-        return `_✘ .${cmdName} errored: ${e.message}_`;
+        const crash = await recoverCommandAfterCrash(cmdName, e, opts);
+        return `_✘ .${cmdName} errored: ${e.message}_${crash ? `\n${crash}` : ''}`;
+    }
+}
+
+async function recoverCommandAfterCrash(cmdName, error, opts) {
+    try {
+        const index = buildProjectIndex();
+        const wanted = String(cmdName || '').toLowerCase();
+        const record = index.commands.find(item => item.name.toLowerCase() === wanted || item.aliases.some(alias => alias.toLowerCase() === wanted));
+        if (!record) return '';
+        const abs = path.join(ROOT, record.file);
+        const source = fs.readFileSync(abs, 'utf8');
+        const fixed = await askAI(`A registered CODY command crashed.\nCommand: ${wanted}\nFile: ${record.file}\nError: ${String(error?.stack || error?.message || error).slice(0, 3000)}\n\nReturn ONLY the complete corrected source for this file. Preserve its public command API and behavior.`);
+        if (!fixed || fixed.trim().startsWith('{')) return '_Recovery skipped: AI did not return source code._';
+        const result = await writeFileWithAgentFix(abs, fixed.trim(), opts, 3);
+        if (!result.ok) return `_Recovery failed syntax validation: ${result.error}`;
+        const { loadCommands } = require('../../Plugin/crysLoadCmd');
+        const loaded = loadCommands();
+        logOp('self_heal', `Recovered ${record.file} after ${wanted} crashed; reloaded ${loaded} commands`);
+        return `_🛠️ Self-healed ${record.file}; syntax passed and ${loaded} commands reloaded._`;
+    } catch (recoveryError) {
+        return `_Recovery failed: ${recoveryError.message}_`;
     }
 }
 
@@ -803,7 +825,11 @@ function commandNameList() {
         const seen = new Set();
         const names = [];
         for (const [, cmd] of getAll()) {
-            if (cmd && cmd.name && !seen.has(cmd.name)) { seen.add(cmd.name); names.push(cmd.name); }
+            if (!cmd) continue;
+            for (const candidate of [cmd.name, ...(Array.isArray(cmd.alias) ? cmd.alias : [])]) {
+                const name = String(candidate || '').toLowerCase();
+                if (name && !seen.has(name)) { seen.add(name); names.push(name); }
+            }
         }
         return names;
     } catch { return []; }
@@ -2133,7 +2159,11 @@ async function execute(sock, m, opts) {
         //    all" opts back into broad engagement. (@crysnovax—FIX12-08-26)
         const body = isCommand ? text.slice(prefix.length).trim() : text;
         const isNamed = /^(plogme|plg|plog)(\s|$)/i.test(body);
-        const engaged = getMode(m.chat) === 'all' || isNamed || isAddressed(sock, m);
+        const mode = getMode(m.chat);
+        const addressed = isAddressed(sock, m, { allowQuote: !m.isGroup || mode !== 'tag' });
+        const engaged = mode === 'all' || (m.isGroup && mode === 'tag'
+            ? (isCommand || isNamed || addressed)
+            : (isNamed || addressed));
         if (!engaged) return false;
 
         // An EXPLICIT ".plogme off" in a chat means SILENT — no free-form AI

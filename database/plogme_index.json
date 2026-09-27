@@ -1,0 +1,8952 @@
+{
+  "generatedAt": "2026-09-27T17:41:35.875Z",
+  "root": ".",
+  "commandCount": 534,
+  "syntaxFailures": 0,
+  "brokenCount": 124,
+  "duplicateNames": [
+    {
+      "name": "!",
+      "files": [
+        "src/Commands/AI/!.js",
+        "src/Commands/Core/!.js"
+      ]
+    },
+    {
+      "name": "weather",
+      "files": [
+        "src/Commands/AI/Weather.js",
+        "src/Commands/Search/Weather.js"
+      ]
+    },
+    {
+      "name": "x",
+      "files": [
+        "src/Commands/AI/X.js",
+        "src/Commands/Owner/x.js"
+      ]
+    },
+    {
+      "name": "✆",
+      "files": [
+        "src/Commands/AI/✆.js",
+        "src/Commands/B×͜×☠︎︎/✆.js"
+      ]
+    },
+    {
+      "name": "quiz",
+      "files": [
+        "src/Commands/Admin/quiz.js",
+        "src/Commands/Admin/quize.js"
+      ]
+    },
+    {
+      "name": "5",
+      "files": [
+        "src/Commands/Anime/5.js",
+        "src/Commands/Overlays/5.js"
+      ]
+    },
+    {
+      "name": "waifu",
+      "files": [
+        "src/Commands/Anime/Waifu.js",
+        "src/Commands/Anime/waifu.js"
+      ]
+    },
+    {
+      "name": "online",
+      "files": [
+        "src/Commands/Bot/Alwaysonline.js",
+        "src/Commands/Bot/online.js"
+      ]
+    },
+    {
+      "name": "ssd",
+      "files": [
+        "src/Commands/Bot/ssd.js",
+        "src/Commands/Owner/ssd.js"
+      ]
+    },
+    {
+      "name": "☠︎︎",
+      "files": [
+        "src/Commands/B×͜×☠︎︎/☠︎︎.js",
+        "src/Commands/Core/☠︎︎.js"
+      ]
+    },
+    {
+      "name": "rapidapi (primary)",
+      "files": [
+        "src/Commands/Core/®-utils.js",
+        "src/Commands/Utils/Default_Time.js"
+      ]
+    },
+    {
+      "name": "®",
+      "files": [
+        "src/Commands/Core/®.js",
+        "src/Commands/Documents/®.js"
+      ]
+    },
+    {
+      "name": "❚",
+      "files": [
+        "src/Commands/Core/❚.js",
+        "src/Commands/Reaction/❚.js"
+      ]
+    },
+    {
+      "name": "allfonts",
+      "files": [
+        "src/Commands/Documents/allfont.js",
+        "src/Commands/Documents/allfonts.js"
+      ]
+    },
+    {
+      "name": "bank",
+      "files": [
+        "src/Commands/Downloader/Bank.js",
+        "src/Commands/Tools/Bank.js"
+      ]
+    },
+    {
+      "name": "turbohighway",
+      "files": [
+        "src/Commands/Games/tb.js",
+        "src/Commands/Games/turbohighway.js"
+      ]
+    },
+    {
+      "name": "addme",
+      "files": [
+        "src/Commands/Group/Glink.js",
+        "src/Commands/Group/addme.js"
+      ]
+    },
+    {
+      "name": "approve",
+      "files": [
+        "src/Commands/Group/approved.js",
+        "src/Commands/Group/approveed.js"
+      ]
+    },
+    {
+      "name": "reject",
+      "files": [
+        "src/Commands/Group/registered.js",
+        "src/Commands/Group/reject.js"
+      ]
+    },
+    {
+      "name": "pinchat",
+      "files": [
+        "src/Commands/Owner/pinchat.js",
+        "src/Commands/Tools/pinchat.js"
+      ]
+    },
+    {
+      "name": "lyrics",
+      "files": [
+        "src/Commands/Search/Lyrics.js",
+        "src/Commands/Search/lyrics.js"
+      ]
+    },
+    {
+      "name": "ytranscript",
+      "files": [
+        "src/Commands/Search/Ytt.js",
+        "src/Commands/Search/ytts.js"
+      ]
+    },
+    {
+      "name": "deleted",
+      "files": [
+        "src/Commands/Tools/retrieve.js",
+        "src/Commands/Utils/deleted.js"
+      ]
+    },
+    {
+      "name": "comic2",
+      "files": [
+        "src/Commands/Utils/cartoon.js",
+        "src/Commands/Utils/cartoon2.js"
+      ]
+    }
+  ],
+  "categories": {
+    "Unknown": [
+      "!",
+      "#",
+      "Changebg",
+      "Fs",
+      "Gini",
+      "Img",
+      "Sora",
+      "X",
+      "arv",
+      "chatbot-compat",
+      "chatbot",
+      "crysnova",
+      "enhance",
+      "generate",
+      "nba",
+      "remini",
+      "⊹",
+      "▸",
+      "✆",
+      "antibot",
+      "antidemote",
+      "antiforward",
+      "antigroupstatus",
+      "antipromote",
+      "antivv",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "Neko",
+      "blue",
+      "loli",
+      "manga",
+      "ranime",
+      "rchar",
+      "_",
+      "botlang",
+      "crysMsg",
+      "ಥ⁠‿⁠ಥ",
+      "彡",
+      "𓅓",
+      "⃝⃪⃔⃕> ☯︎",
+      "☠︎︎",
+      "✆",
+      "𓂃✍︎",
+      "-",
+      "!!!",
+      "!",
+      "'",
+      "*",
+      "+",
+      ",,",
+      "crysnovax",
+      "plogme-dependencies",
+      "plogme-health",
+      "plogme-missions",
+      "plogme-project-index",
+      "RapidAPI (Primary)",
+      "®",
+      "°",
+      "¿",
+      "֎",
+      "‎",
+      "•",
+      "ⓘ",
+      "☠︎︎",
+      "✐",
+      "❚",
+      "𓊈𝑽꯭𝑰꯭𝑷ࠡࠡࠡࠡࠢ𓊉",
+      "®",
+      "Instagram",
+      "Upstream",
+      "music",
+      "play",
+      "V",
+      "sendHtmlPrimitive",
+      "spack",
+      "toimg",
+      "xblur",
+      "〄",
+      "5",
+      "〽️",
+      "___",
+      "addstatus",
+      "dual",
+      "poststatus",
+      "savestatus",
+      "sudo",
+      "x",
+      "ཽ",
+      "Felo",
+      "Sounds",
+      "Web",
+      "movie",
+      "shazam",
+      "£x",
+      "Link",
+      "issues",
+      "reload",
+      "version",
+      "Reminde",
+      "antiedit",
+      "event",
+      "font",
+      "note",
+      "@",
+      "md",
+      "mdhelp",
+      "sticker-converter"
+    ],
+    "AI": [
+      "aimodels",
+      "aiwriter",
+      "copilot",
+      "deepseek",
+      "caption",
+      "gemini",
+      "gpt",
+      "horror",
+      "pixelart",
+      "rembg",
+      "story",
+      "chateverywhere",
+      "codeai",
+      "luna",
+      "musicgen",
+      "plogme",
+      "tojs",
+      "listvoice",
+      "ttsm"
+    ],
+    "Search": [
+      "weather",
+      "unidownload",
+      "yt",
+      "crypto",
+      "forex",
+      "currency",
+      "dictionary",
+      "fetch",
+      "lyrics",
+      "movieintel",
+      "nameinfo",
+      "phoneinfo",
+      "ringtone",
+      "wallpaper",
+      "chrome",
+      "countryinfo",
+      "githubinfo",
+      "history",
+      "iplookup",
+      "livematch",
+      "lyrics",
+      "npminfo",
+      "space",
+      "tiktoksearch",
+      "bible",
+      "quran",
+      "tanak"
+    ],
+    "ai": [
+      "code"
+    ],
+    "Group": [
+      "all",
+      "ephemeral",
+      "ginfo",
+      "addme",
+      "poll",
+      "addme",
+      "approve",
+      "approve",
+      "blockall",
+      "creategc",
+      "dnd",
+      "invite",
+      "muteallsticker",
+      "mutesch",
+      "mutesticker",
+      "muteuser",
+      "reject",
+      "reject",
+      "saveall",
+      "tkick",
+      "unsaveall"
+    ],
+    "Admin": [
+      "kick",
+      "listonline",
+      "mute",
+      "add",
+      "antilink",
+      "antispam",
+      "antitag",
+      "antiword",
+      "demote",
+      "kickinactive",
+      "promote",
+      "setgoodbye",
+      "settings",
+      "setwelcome",
+      "tagall",
+      "unmute",
+      "warn",
+      "revoke",
+      "gstatus",
+      "pin"
+    ],
+    "Tools": [
+      "antigm",
+      "quoted",
+      "ttsfr",
+      "ttsen",
+      "comc++",
+      "comhtml",
+      "comjs",
+      "delgdesc",
+      "gdesc",
+      "tgsticker",
+      "forward",
+      "pinchat",
+      "save",
+      "resend",
+      "myfavorite",
+      "ytranscript",
+      "ytranscript",
+      "bank",
+      "wss",
+      "calendar",
+      "device",
+      "distance",
+      "encryptcode",
+      "jid",
+      "location",
+      "pinchat",
+      "remcmd",
+      "deleted",
+      "send_file",
+      "settrd",
+      "short",
+      "tr",
+      "trd",
+      "tempemail",
+      "nurl",
+      "sms24numbers",
+      "sms24msg",
+      "call",
+      "deleted",
+      "open",
+      "raw"
+    ],
+    "Newsletter": [
+      "channel"
+    ],
+    "group": [
+      "events",
+      "del",
+      "gmpin",
+      "delgc",
+      "hidetag",
+      "exit",
+      "setgpp",
+      "delgpp",
+      "gcname",
+      "lockgc",
+      "tagadmin",
+      "unlockgc"
+    ],
+    "Interactive": [
+      "quiz",
+      "quiz",
+      "select"
+    ],
+    "anime": [
+      "char"
+    ],
+    "Anime": [
+      "kill#",
+      "waifu",
+      "ahug",
+      "waifu",
+      "animesearch"
+    ],
+    "audio": [
+      "8d",
+      "autosing",
+      "deep",
+      "drunk",
+      "fast",
+      "bass",
+      "chipmunk",
+      "distort",
+      "echo",
+      "merge",
+      "nightcore",
+      "reverb",
+      "reverse",
+      "robot",
+      "slow",
+      "tremolo"
+    ],
+    "owner": [
+      "online",
+      "ghost",
+      "online",
+      "clearcmd",
+      "delcmd",
+      "delemoji",
+      "listemoji",
+      "setcmd",
+      "setemoji",
+      "setpp",
+      "plugin",
+      "plugins",
+      "unplugin"
+    ],
+    "general": [
+      "cmds"
+    ],
+    "tools": [
+      "delfonts",
+      "botfont",
+      "dellang",
+      "gist",
+      "tovn",
+      ":",
+      "pdf",
+      "apk",
+      "bank",
+      "stickerpk",
+      "take",
+      "autoreact",
+      "weather",
+      "wiki",
+      "Script",
+      "antidelete",
+      "clearchat",
+      "calculator",
+      "qr",
+      "resize",
+      "webp",
+      "url"
+    ],
+    "Owner": [
+      "faketyping",
+      "gitclone",
+      "checkup",
+      "greet",
+      "ssd",
+      "aibadge",
+      "join",
+      "autoadd",
+      "autorecording",
+      "afk",
+      "allvar",
+      "anticall",
+      "ass",
+      "autoread",
+      "getstatus",
+      "wa",
+      "bancheck",
+      "calllink",
+      "delay",
+      "gen4",
+      "ownerstatus",
+      "mention",
+      "pooltable",
+      "poststory",
+      "report",
+      "richgen",
+      "savemode",
+      "bio",
+      "setname",
+      "ssd",
+      "ssl",
+      "statusview",
+      "testcard",
+      "testwallpaper",
+      "wallpaperids",
+      "webviewtest",
+      "teststicker",
+      "sscmd",
+      "toggleprivate",
+      "cmdreact",
+      "ghosted",
+      "backup",
+      "autoupdate",
+      "delvar",
+      "format",
+      "getvar",
+      "restart",
+      "setvar",
+      "togglepp",
+      "eval",
+      "update"
+    ],
+    "Info": [
+      "check",
+      "uptime",
+      "sponsor",
+      "repo",
+      "taxinfo",
+      "RapidAPI (Primary)",
+      "settmd",
+      "tm"
+    ],
+    "Bot": [
+      "ping",
+      "menu",
+      "mode",
+      "owner"
+    ],
+    "Business": [
+      "bizcover",
+      "bizupdate",
+      "catalog",
+      "labels",
+      "quickreply"
+    ],
+    "Payment": [
+      "payinvite"
+    ],
+    "Bug/Safe": [
+      "filebomb"
+    ],
+    "Community": [
+      "createcommunity"
+    ],
+    "Converter": [
+      "lunav",
+      "2mp3",
+      "tovv",
+      "vvcmd",
+      "allfonts",
+      "allfonts",
+      "html2img"
+    ],
+    "Utils": [
+      "dec",
+      "getpp",
+      "gpp",
+      "callme"
+    ],
+    "Media": [
+      "ttp",
+      "collage",
+      "toround",
+      "rounds",
+      "rtoimg",
+      "sprem",
+      "sticker",
+      "togif"
+    ],
+    "WhatsApp": [
+      "tts"
+    ],
+    "media": [
+      "vv",
+      "brightness",
+      "cyan",
+      "glow",
+      "gold",
+      "gray",
+      "green",
+      "invert",
+      "pixel",
+      "purple",
+      "red",
+      "sparkle",
+      "upscale",
+      "bury",
+      "jail",
+      "kiss",
+      "wanted",
+      "contrast",
+      "rotate"
+    ],
+    "User": [
+      "${name}"
+    ],
+    "Documents": [
+      "compress",
+      "doc",
+      "docconvert",
+      "excel",
+      "html",
+      "scan",
+      "csv",
+      "txt",
+      "vcf",
+      "xml",
+      "zip",
+      "chart",
+      "diary",
+      "table",
+      "ics",
+      "json",
+      "word"
+    ],
+    "downloader": [
+      "fbstream",
+      "fb",
+      "yts",
+      "tiktok",
+      "video"
+    ],
+    "Download": [
+      "mediafire",
+      "pinterest",
+      "spotify",
+      "yturld"
+    ],
+    "Downloader": [
+      "d",
+      "ttld"
+    ],
+    "Finance": [
+      "New York Stock Exchange"
+    ],
+    "Economy": [
+      "economy"
+    ],
+    "Shop": [
+      "product"
+    ],
+    "fun": [
+      "jok",
+      "meme",
+      "ascii",
+      "emojimix",
+      "Crysnova!",
+      "❚"
+    ],
+    "Fun": [
+      "dice",
+      "fact",
+      "horoscope",
+      "joke",
+      "quote"
+    ],
+    "Games": [
+      "2048",
+      "8ball",
+      "dare",
+      "neverhaveiever",
+      "wouldyourather",
+      "anagram",
+      "breakout",
+      "frogger",
+      "hint",
+      "slots",
+      "snake",
+      "turbohighway",
+      "tictactoe",
+      "truth",
+      "ttt",
+      "turbohighway",
+      "wordle",
+      "zombie",
+      "password"
+    ],
+    "Maker": [
+      "brat"
+    ],
+    "textmaker": [
+      "matrix",
+      "1917",
+      "arena",
+      "blackpink",
+      "devil",
+      "glitch",
+      "fire",
+      "hacker",
+      "ice",
+      "impressive",
+      "leaves",
+      "light",
+      "metallic",
+      "thunder",
+      "snow",
+      "sand",
+      "purplet",
+      "neont"
+    ],
+    "Media-Editor": [
+      "nosound"
+    ],
+    "Image-Edit": [
+      "shit",
+      "greyscale",
+      "trigger",
+      "funny",
+      "trash",
+      "sepia",
+      "rainbow",
+      "hitler",
+      "affect",
+      "circle",
+      "facepalm"
+    ],
+    "utility": [
+      "delpp"
+    ],
+    "Privacy": [
+      "lastseen"
+    ],
+    "Quiz": [
+      "riddle",
+      "mathquiz",
+      "trivia"
+    ],
+    "Random": [
+      "animehentai"
+    ],
+    "News": [
+      "news"
+    ],
+    "Education": [
+      "element"
+    ],
+    "Entertainment": [
+      "esports"
+    ],
+    "info": [
+      "alive"
+    ],
+    "System": [
+      "deploy",
+      "stats"
+    ],
+    "General": [
+      "mylink"
+    ],
+    "Utility": [
+      "preview"
+    ],
+    "image": [
+      "sketcher",
+      "comic2",
+      "comic2"
+    ]
+  },
+  "commands": [
+    {
+      "name": "!",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/!.js",
+      "imports": [
+        "axios",
+        "fs",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "#",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/#.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "aimodels",
+      "aliases": [
+        "aimodel",
+        "model"
+      ],
+      "category": "AI",
+      "file": "src/Commands/AI/Aimodels.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "aiwriter",
+      "aliases": [
+        "aimodel",
+        "model",
+        "ai"
+      ],
+      "category": "AI",
+      "file": "src/Commands/AI/Aiwriter.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "copilot",
+      "aliases": [
+        "ghost",
+        "aihelp"
+      ],
+      "category": "AI",
+      "file": "src/Commands/AI/Capilot.js",
+      "imports": [
+        "axios",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "Changebg",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/Changebg.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "deepseek",
+      "aliases": [
+        "ds",
+        "ask",
+        "ai2"
+      ],
+      "category": "AI",
+      "file": "src/Commands/AI/Deepseek.js",
+      "imports": [
+        "axios",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "caption",
+      "aliases": [
+        "describe",
+        "seethis"
+      ],
+      "category": "AI",
+      "file": "src/Commands/AI/Describe.js",
+      "imports": [
+        "axios",
+        "form-data",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "Fs",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/Fs.js",
+      "imports": [
+        "axios",
+        "form-data"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "gemini",
+      "aliases": [
+        "gchat",
+        "gemgpt"
+      ],
+      "category": "AI",
+      "file": "src/Commands/AI/Gemini.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "Gini",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/Gini.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "gpt",
+      "aliases": [
+        "chatgpt",
+        "chat",
+        "gpt4"
+      ],
+      "category": "AI",
+      "file": "src/Commands/AI/Gpt.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "horror",
+      "aliases": [
+        "scary",
+        "creep",
+        "nightmare"
+      ],
+      "category": "AI",
+      "file": "src/Commands/AI/Horror.js",
+      "imports": [
+        "axios",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "Img",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/Img.js",
+      "imports": [
+        "form-data"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "pixelart",
+      "aliases": [
+        "pixelai",
+        "8bit",
+        "retroart"
+      ],
+      "category": "AI",
+      "file": "src/Commands/AI/Pixelart.js",
+      "imports": [
+        "axios",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "rembg",
+      "aliases": [
+        "removebg",
+        "nobg",
+        "bgremove"
+      ],
+      "category": "AI",
+      "file": "src/Commands/AI/Removebg.js",
+      "imports": [
+        "axios",
+        "form-data",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "Sora",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/Sora.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "story",
+      "aliases": [],
+      "category": "AI",
+      "file": "src/Commands/AI/Storyai.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "weather",
+      "aliases": [
+        "wthr",
+        "forecast",
+        "climate"
+      ],
+      "category": "Search",
+      "file": "src/Commands/AI/Weather.js",
+      "imports": [
+        "axios",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/AI/Weather.js, src/Commands/Search/Weather.js"
+    },
+    {
+      "name": "X",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/X.js",
+      "imports": [
+        "fs",
+        "path",
+        "axios",
+        "../../../settings/config",
+        "../../Plugin/crysCmd.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/AI/X.js, src/Commands/Owner/x.js"
+    },
+    {
+      "name": "chateverywhere",
+      "aliases": [
+        "ce",
+        "freechat"
+      ],
+      "category": "AI",
+      "file": "src/Commands/AI/allchat.js",
+      "imports": [
+        "axios",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "arv",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/arv.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "chatbot-compat",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/chatbot-compat.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "chatbot",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/chatbot.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "codeai",
+      "aliases": [
+        "advancedcode",
+        "codegen"
+      ],
+      "category": "AI",
+      "file": "src/Commands/AI/codeai.js",
+      "imports": [
+        "axios",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "code",
+      "aliases": [],
+      "category": "ai",
+      "file": "src/Commands/AI/coder.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "crysnova",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/crysnova.js",
+      "imports": [
+        "fs",
+        "cheerio",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "enhance",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/enhance.js",
+      "imports": [
+        "axios",
+        "sharp"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "generate",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/generate.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "luna",
+      "aliases": [
+        "ai",
+        "ask"
+      ],
+      "category": "AI",
+      "file": "src/Commands/AI/luna.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "musicgen",
+      "aliases": [
+        "musicai",
+        "aimusic",
+        "genmusic",
+        "text2music"
+      ],
+      "category": "AI",
+      "file": "src/Commands/AI/mg.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "nba",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/nba.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "plogme",
+      "aliases": [
+        "plg",
+        "plog"
+      ],
+      "category": "AI",
+      "file": "src/Commands/AI/plogme.js",
+      "imports": [
+        "../Core/plogme.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "remini",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/remini.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "tojs",
+      "aliases": [
+        "toj",
+        "convertjs",
+        "jsify"
+      ],
+      "category": "AI",
+      "file": "src/Commands/AI/tojs.js",
+      "imports": [
+        "axios",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "⊹",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/⊹.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "▸",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/▸.js",
+      "imports": [
+        "fs",
+        "ffmpeg-static"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "✆",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/AI/✆.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "all",
+      "aliases": [],
+      "category": "Group",
+      "file": "src/Commands/Admin/@all.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "kick",
+      "aliases": [
+        "remove"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/Kick.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "listonline",
+      "aliases": [
+        "active",
+        "here",
+        "whoisonline",
+        "onlinelist"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/Listonline.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "mute",
+      "aliases": [
+        "silence",
+        "groupmute"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/Mute.js",
+      "imports": [
+        "../../Plugin/mute-core",
+        "node-cron"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "add",
+      "aliases": [
+        "adduser"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/add.js",
+      "imports": [
+        "node-fetch"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "antibot",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Admin/antibot.js",
+      "imports": [
+        "../../Plugin/antiMessageModeration"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "antidemote",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Admin/antidemote.js",
+      "imports": [
+        "../../Plugin/promotionGuard"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "antiforward",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Admin/antiforward.js",
+      "imports": [
+        "../../Plugin/antiMessageModeration"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "antigm",
+      "aliases": [
+        "antigroupmention",
+        "antigroupmsg",
+        "antieveryone"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Admin/antigm.js",
+      "imports": [
+        "fs",
+        "path",
+        "../../Plugin/tkick"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "antigroupstatus",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Admin/antigroupstatus.js",
+      "imports": [
+        "../../Plugin/antiMessageModeration",
+        "../../Plugin/identityUtils"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "antilink",
+      "aliases": [
+        "al"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/antilink.js",
+      "imports": [
+        "fs",
+        "path",
+        "../../Plugin/antiText",
+        "../../Plugin/tkick"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "antipromote",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Admin/antipromote.js",
+      "imports": [
+        "../../Plugin/promotionGuard"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "antispam",
+      "aliases": [
+        "antispam",
+        "spam"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/antispam.js",
+      "imports": [
+        "fs",
+        "path",
+        "../../Plugin/tkick"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "antitag",
+      "aliases": [
+        "antimention",
+        "antitagall"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/antitag.js",
+      "imports": [
+        "fs",
+        "path",
+        "../../Plugin/antiText",
+        "../../Plugin/tkick"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "antivv",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Admin/antivv.js",
+      "imports": [
+        "../../Plugin/antiMessageModeration"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "antiword",
+      "aliases": [
+        "banword",
+        "wordban"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/antiword.js",
+      "imports": [
+        "fs",
+        "path",
+        "../../Plugin/antiText",
+        "../../Plugin/tkick"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "channel",
+      "aliases": [
+        "ch",
+        "newsletter",
+        "nl",
+        "createchannel"
+      ],
+      "category": "Newsletter",
+      "file": "src/Commands/Admin/createch.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "demote",
+      "aliases": [
+        "unadmin"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/demote.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "events",
+      "aliases": [],
+      "category": "group",
+      "file": "src/Commands/Admin/events.js",
+      "imports": [
+        "fs"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ephemeral",
+      "aliases": [
+        "disappearing",
+        "toggleephemeral",
+        "settimer"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Admin/group.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "kickinactive",
+      "aliases": [
+        "inactivekick",
+        "kickidle"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/kickinactive.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ginfo",
+      "aliases": [
+        "groupinfo",
+        "gi"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Admin/lk.js",
+      "imports": [
+        "node-fetch"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "promote",
+      "aliases": [
+        "admin"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/promote.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "quoted",
+      "aliases": [
+        "getquoted",
+        "showquoted"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Admin/qt.js",
+      "imports": [
+        "plogme"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "quiz",
+      "aliases": [],
+      "category": "Interactive",
+      "file": "src/Commands/Admin/quiz.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Admin/quiz.js, src/Commands/Admin/quize.js"
+    },
+    {
+      "name": "quiz",
+      "aliases": [],
+      "category": "Interactive",
+      "file": "src/Commands/Admin/quize.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Admin/quiz.js, src/Commands/Admin/quize.js"
+    },
+    {
+      "name": "setgoodbye",
+      "aliases": [
+        "goodbye"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/setgoodbye.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "settings",
+      "aliases": [
+        "groupsettings",
+        "modsettings"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/settings.js",
+      "imports": [
+        "fs",
+        "path",
+        "../../Plugin/identityUtils"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "setwelcome",
+      "aliases": [
+        "welcome"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/setwelcome.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "tagall",
+      "aliases": [
+        "everyone"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/tagall.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "unmute",
+      "aliases": [
+        "unsilence",
+        "groupunmute"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/unmute.js",
+      "imports": [
+        "../../Plugin/mute-core"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "warn",
+      "aliases": [
+        "warning",
+        "warnuser"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Admin/warn.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "4",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Anime/4.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "5",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Anime/5.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "6",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Anime/6.js",
+      "imports": [
+        "fs"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "7",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Anime/7.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "8",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Anime/8.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "9",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Anime/9.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "char",
+      "aliases": [
+        "char",
+        "aimg"
+      ],
+      "category": "anime",
+      "file": "src/Commands/Anime/Char.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "kill#",
+      "aliases": [
+        "slay#",
+        "murder#"
+      ],
+      "category": "Anime",
+      "file": "src/Commands/Anime/Kill.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "Neko",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Anime/Neko.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "waifu",
+      "aliases": [
+        "animegirl",
+        "animewaifu",
+        "waifuimg",
+        "waifupic"
+      ],
+      "category": "Anime",
+      "file": "src/Commands/Anime/Waifu.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Anime/Waifu.js, src/Commands/Anime/waifu.js"
+    },
+    {
+      "name": "ahug",
+      "aliases": [
+        "ahugme"
+      ],
+      "category": "Anime",
+      "file": "src/Commands/Anime/anime.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "blue",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Anime/blue.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "loli",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Anime/loli.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "manga",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Anime/manga.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "ranime",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Anime/ranime.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "rchar",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Anime/rchar.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "waifu",
+      "aliases": [
+        "animegirl",
+        "animewaifu",
+        "waifuimg",
+        "waifupic"
+      ],
+      "category": "Anime",
+      "file": "src/Commands/Anime/waifu.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Anime/Waifu.js, src/Commands/Anime/waifu.js"
+    },
+    {
+      "name": "8d",
+      "aliases": [],
+      "category": "audio",
+      "file": "src/Commands/Audio/8d.js",
+      "imports": [
+        "../Core/¿.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "autosing",
+      "aliases": [],
+      "category": "audio",
+      "file": "src/Commands/Audio/Autosing.js",
+      "imports": [
+        "fs",
+        "path",
+        "node-gtts",
+        "../Core/¿.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "deep",
+      "aliases": [],
+      "category": "audio",
+      "file": "src/Commands/Audio/Deep.js",
+      "imports": [
+        "../Core/¿.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "drunk",
+      "aliases": [],
+      "category": "audio",
+      "file": "src/Commands/Audio/Drunk.js",
+      "imports": [
+        "../Core/¿.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "fast",
+      "aliases": [],
+      "category": "audio",
+      "file": "src/Commands/Audio/Fast.js",
+      "imports": [
+        "../Core/¿.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "bass",
+      "aliases": [],
+      "category": "audio",
+      "file": "src/Commands/Audio/bass.js",
+      "imports": [
+        "../Core/¿.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "chipmunk",
+      "aliases": [],
+      "category": "audio",
+      "file": "src/Commands/Audio/chipmunk.js",
+      "imports": [
+        "../Core/¿.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "distort",
+      "aliases": [],
+      "category": "audio",
+      "file": "src/Commands/Audio/distort.js",
+      "imports": [
+        "../Core/¿.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "echo",
+      "aliases": [],
+      "category": "audio",
+      "file": "src/Commands/Audio/echo.js",
+      "imports": [
+        "../Core/¿.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "merge",
+      "aliases": [],
+      "category": "audio",
+      "file": "src/Commands/Audio/merge.js",
+      "imports": [
+        "../Core/¿.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "nightcore",
+      "aliases": [],
+      "category": "audio",
+      "file": "src/Commands/Audio/nightcore.js",
+      "imports": [
+        "../Core/¿.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "reverb",
+      "aliases": [],
+      "category": "audio",
+      "file": "src/Commands/Audio/reverb.js",
+      "imports": [
+        "../Core/¿.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "reverse",
+      "aliases": [],
+      "category": "audio",
+      "file": "src/Commands/Audio/reverse.js",
+      "imports": [
+        "../Core/¿.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "robot",
+      "aliases": [],
+      "category": "audio",
+      "file": "src/Commands/Audio/robot.js",
+      "imports": [
+        "../Core/¿.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "slow",
+      "aliases": [],
+      "category": "audio",
+      "file": "src/Commands/Audio/slowed.js",
+      "imports": [
+        "../Core/¿.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "tremolo",
+      "aliases": [],
+      "category": "audio",
+      "file": "src/Commands/Audio/tremolo.js",
+      "imports": [
+        "../Core/¿.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "online",
+      "aliases": [
+        "alwaysonline",
+        "aonline",
+        "offline"
+      ],
+      "category": "owner",
+      "file": "src/Commands/Bot/Alwaysonline.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Bot/Alwaysonline.js, src/Commands/Bot/online.js"
+    },
+    {
+      "name": "cmds",
+      "aliases": [
+        "commands",
+        "allcmds",
+        "listcmds"
+      ],
+      "category": "general",
+      "file": "src/Commands/Bot/Cmds.js",
+      "imports": [
+        "../../Plugin/crysCmd"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "del",
+      "aliases": [
+        "delete"
+      ],
+      "category": "group",
+      "file": "src/Commands/Bot/Delete.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "delfonts",
+      "aliases": [
+        "remfonts",
+        "clearfonts",
+        "rmfonts"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Bot/Delfonts.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "faketyping",
+      "aliases": [
+        "typing"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Bot/Faketyping.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "gitclone",
+      "aliases": [
+        "clone",
+        "git",
+        "downloadrepo"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Bot/Gclone.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "_",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Bot/_.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "botfont",
+      "aliases": [
+        "setfont"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Bot/botfont.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "botlang",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Bot/botlang.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "check",
+      "aliases": [],
+      "category": "Info",
+      "file": "src/Commands/Bot/check.js",
+      "imports": [
+        "os",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "checkup",
+      "aliases": [
+        "newupd",
+        "checkupdate"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Bot/checkupdate.js",
+      "imports": [
+        "fs",
+        "path",
+        "axios",
+        "adm-zip"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "crysMsg",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Bot/crysMsg.js",
+      "imports": [
+        "../../Plugin/crysCmd",
+        "../../Plugin/configManager",
+        "chalk",
+        "../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "dellang",
+      "aliases": [
+        "remlang",
+        "clearlang",
+        "rmlang"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Bot/dellang.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ghost",
+      "aliases": [
+        "ghostmode",
+        "invisible",
+        "stealth"
+      ],
+      "category": "owner",
+      "file": "src/Commands/Bot/ghost-mode.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "gist",
+      "aliases": [
+        "github",
+        "paste",
+        "code"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Bot/gist.js",
+      "imports": [
+        "fs",
+        "node-fetch"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "greet",
+      "aliases": [],
+      "category": "Owner",
+      "file": "src/Commands/Bot/greet.js",
+      "imports": [
+        "path",
+        "fs"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "online",
+      "aliases": [
+        "alwaysonline",
+        "aonline",
+        "offline"
+      ],
+      "category": "owner",
+      "file": "src/Commands/Bot/online.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Bot/Alwaysonline.js, src/Commands/Bot/online.js"
+    },
+    {
+      "name": "ping",
+      "aliases": [
+        "pong",
+        "latency"
+      ],
+      "category": "Bot",
+      "file": "src/Commands/Bot/ping.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ssd",
+      "aliases": [
+        "securemeta",
+        "metasecure"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Bot/ssd.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Bot/ssd.js, src/Commands/Owner/ssd.js"
+    },
+    {
+      "name": "uptime",
+      "aliases": [
+        "up"
+      ],
+      "category": "Info",
+      "file": "src/Commands/Bot/uptime.js",
+      "imports": [
+        "../Core/®.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ಥ⁠‿⁠ಥ",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Bot/ಥ⁠‿⁠ಥ.js",
+      "imports": [
+        "axios",
+        "os"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "menu",
+      "aliases": [
+        "help",
+        "list",
+        "menubit"
+      ],
+      "category": "Bot",
+      "file": "src/Commands/Bot/ⓘ.js",
+      "imports": [
+        "../../Plugin/crysCmd",
+        "../../Plugin/configManager",
+        "os",
+        "../../Plugin/identityUtils",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "彡",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Bot/彡.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "𓅓",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Bot/𓅓.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "aibadge",
+      "aliases": [
+        "badge",
+        "metabadge"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Bot/🔖.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "bizcover",
+      "aliases": [
+        "coverphoto",
+        "bizcov"
+      ],
+      "category": "Business",
+      "file": "src/Commands/Business WhatsApp/bizcover.js",
+      "imports": [
+        "../../../settings/config",
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "bizupdate",
+      "aliases": [
+        "updatebiz",
+        "bizsetup"
+      ],
+      "category": "Business",
+      "file": "src/Commands/Business WhatsApp/bizupdate.js",
+      "imports": [
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "catalog",
+      "aliases": [
+        "products",
+        "shop",
+        "store"
+      ],
+      "category": "Business",
+      "file": "src/Commands/Business WhatsApp/catalog.js",
+      "imports": [
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "labels",
+      "aliases": [
+        "label",
+        "tag"
+      ],
+      "category": "Business",
+      "file": "src/Commands/Business WhatsApp/labels.js",
+      "imports": [
+        "../../../settings/config",
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "payinvite",
+      "aliases": [
+        "paymentinvite",
+        "invitepayment"
+      ],
+      "category": "Payment",
+      "file": "src/Commands/Business WhatsApp/pay.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "quickreply",
+      "aliases": [
+        "qr",
+        "quickr"
+      ],
+      "category": "Business",
+      "file": "src/Commands/Business WhatsApp/quickreply.js",
+      "imports": [
+        "../../../settings/config",
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "filebomb",
+      "aliases": [
+        "fbomb",
+        "docbug"
+      ],
+      "category": "Bug/Safe",
+      "file": "src/Commands/B×͜×☠︎︎/#.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "⃝⃪⃔⃕> ☯︎",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/B×͜×☠︎︎/⃝⃪⃔⃕> ☯︎.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "☠︎︎",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/B×͜×☠︎︎/☠︎︎.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "✆",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/B×͜×☠︎︎/✆.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "𓂃✍︎",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/B×͜×☠︎︎/𓂃✍︎.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "createcommunity",
+      "aliases": [
+        "ccommunity",
+        "newcommunity",
+        "makecommunity"
+      ],
+      "category": "Community",
+      "file": "src/Commands/Community/community.js",
+      "imports": [
+        "node-fetch"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "lunav",
+      "aliases": [
+        "lvoice",
+        "lv"
+      ],
+      "category": "Converter",
+      "file": "src/Commands/Converter/+.js",
+      "imports": [
+        "fs",
+        "path",
+        "axios",
+        "child_process"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "-",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Converter/-.js",
+      "imports": [
+        "fs"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "2mp3",
+      "aliases": [
+        "tompeg",
+        "vtoa",
+        "v2mp3",
+        "video2mp3"
+      ],
+      "category": "Converter",
+      "file": "src/Commands/Converter/2mp3.js",
+      "imports": [
+        "fs",
+        "path",
+        "child_process",
+        "ffmpeg-static"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "dec",
+      "aliases": [
+        "decode",
+        "transcribe",
+        "vtt"
+      ],
+      "category": "Utils",
+      "file": "src/Commands/Converter/Decode.js",
+      "imports": [
+        "fs",
+        "path",
+        "axios",
+        "form-data",
+        "plogme",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ttp",
+      "aliases": [
+        "text2sticker",
+        "textsticker",
+        "ttp"
+      ],
+      "category": "Media",
+      "file": "src/Commands/Converter/Texttoimage.js",
+      "imports": [
+        "canvas",
+        "sharp",
+        "../../../library/exif",
+        "../../Plugin/packname"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "tovn",
+      "aliases": [
+        "tovoice",
+        "mediavoice",
+        "voice"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Converter/Tovn.js",
+      "imports": [
+        "plogme",
+        "child_process"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "tovv",
+      "aliases": [],
+      "category": "Converter",
+      "file": "src/Commands/Converter/Tovv.js",
+      "imports": [
+        "plogme"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "listvoice",
+      "aliases": [
+        "voicelist"
+      ],
+      "category": "AI",
+      "file": "src/Commands/Converter/Voicelist.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ttsm",
+      "aliases": [
+        "voice"
+      ],
+      "category": "AI",
+      "file": "src/Commands/Converter/Voices.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ttsfr",
+      "aliases": [
+        "frenchtts",
+        "speakfr"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Converter/speakfr.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "tts",
+      "aliases": [
+        "say",
+        "speak",
+        "voice"
+      ],
+      "category": "WhatsApp",
+      "file": "src/Commands/Converter/tts.js",
+      "imports": [
+        "child_process",
+        "fs",
+        "path",
+        "axios",
+        "util"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ttsen",
+      "aliases": [
+        "englishtts"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Converter/ttsen.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "vv",
+      "aliases": [
+        "viewonce",
+        "vview",
+        "vvp",
+        "autovv"
+      ],
+      "category": "media",
+      "file": "src/Commands/Converter/view-once.js",
+      "imports": [
+        "fs",
+        "path",
+        "plogme",
+        "../../Plugin/identityUtils",
+        "../../Plugin/antiText"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "vvcmd",
+      "aliases": [
+        "setvv",
+        "vvtrigger"
+      ],
+      "category": "Converter",
+      "file": "src/Commands/Converter/vvcmd.js",
+      "imports": [
+        "fs",
+        "path",
+        "plogme"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "!!!",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/!!!.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "!",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/!.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/AI/!.js, src/Commands/Core/!.js"
+    },
+    {
+      "name": "'",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/'.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "*",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/*.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "+",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/+.js",
+      "imports": [
+        "groq-sdk"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": ",,",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/,,.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "crysnovax",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/-.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": ":",
+      "aliases": [],
+      "category": "tools",
+      "file": "src/Commands/Core/:.js",
+      "imports": [
+        "./°.js",
+        "./,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "plogme-dependencies",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/plogme-dependencies.js",
+      "imports": [
+        "fs",
+        "path",
+        "child_process"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "plogme-health",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/plogme-health.js",
+      "imports": [
+        "fs",
+        "path",
+        "child_process",
+        "./plogme-project-index"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "plogme-missions",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/plogme-missions.js",
+      "imports": [
+        "fs",
+        "path",
+        "crypto"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "plogme-project-index",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/plogme-project-index.js",
+      "imports": [
+        "fs",
+        "path",
+        "child_process"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "${name}",
+      "aliases": [],
+      "category": "User",
+      "file": "src/Commands/Core/plogme.js",
+      "imports": [
+        "fs",
+        "path",
+        "../../../settings/config",
+        "child_process",
+        "../../Plugin/configManager",
+        "./plogme-missions",
+        "./plogme-dependencies",
+        "./plogme-health",
+        "./plogme-project-index",
+        "pdfkit",
+        "../Owner/mention.js",
+        "../../Plugin/identityUtils",
+        "../../Plugin/crysCmd",
+        "../../Plugin/crysCmd",
+        "../Tools/send_file",
+        "../../settings/config",
+        "../../Plugin/crysLoadCmd",
+        "../../Plugin/crysCmd",
+        "../../Plugin/crysLoadCmd",
+        "../../Plugin/crysCmd",
+        "../../Plugin/crysLoadCmd",
+        "../../Plugin/crysLoadCmd",
+        "../../Plugin/crysCmd",
+        "../../Plugin/crysCmd",
+        "mime-types",
+        "../../Plugin/crysLoadCmd",
+        "mime-types",
+        "../../Plugin/crysLoadCmd",
+        "../../Plugin/crysLoadCmd",
+        "../../Plugin/crysCmd",
+        "../../Plugin/crysCmd",
+        "../../Plugin/crysLoadCmd",
+        "../../Plugin/crysCmd",
+        "../../Plugin/crysCmd",
+        "../../Plugin/crysLoadCmd",
+        "adm-zip",
+        "../../Plugin/crysCmd",
+        "../../Plugin/crysCmd"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "sponsor",
+      "aliases": [
+        "donate",
+        "supportcody"
+      ],
+      "category": "Info",
+      "file": "src/Commands/Core/sponsor.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "RapidAPI (Primary)",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/®-utils.js",
+      "imports": [
+        "axios",
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Core/®-utils.js, src/Commands/Utils/Default_Time.js"
+    },
+    {
+      "name": "®",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/®.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "°",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/°.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "¿",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/¿.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "֎",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/֎.js",
+      "imports": [
+        "plogme"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "‎",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/‎.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "•",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/•.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "repo",
+      "aliases": [
+        "source",
+        "cody"
+      ],
+      "category": "Info",
+      "file": "src/Commands/Core/⎙.js",
+      "imports": [
+        "./sponsor"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ⓘ",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/ⓘ.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "☠︎︎",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/☠︎︎.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/B×͜×☠︎︎/☠︎︎.js, src/Commands/Core/☠︎︎.js"
+    },
+    {
+      "name": "✐",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/✐.js",
+      "imports": [
+        "axios",
+        "fs"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "❚",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/❚.js",
+      "imports": [
+        "fs",
+        "path",
+        "form-data"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "𓊈𝑽꯭𝑰꯭𝑷ࠡࠡࠡࠡࠢ𓊉",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Core/𓊈𝑽꯭𝑰꯭𝑷ࠡࠡࠡࠡࠢ𓊉.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "compress",
+      "aliases": [
+        "shrink",
+        "reduce",
+        "tiny"
+      ],
+      "category": "Documents",
+      "file": "src/Commands/Documents/Com.js",
+      "imports": [
+        "fs",
+        "path",
+        "child_process"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "doc",
+      "aliases": [
+        "document",
+        "todoc",
+        "senddoc"
+      ],
+      "category": "Documents",
+      "file": "src/Commands/Documents/Doc.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "docconvert",
+      "aliases": [
+        "doconv",
+        "fileconv"
+      ],
+      "category": "Documents",
+      "file": "src/Commands/Documents/Doconv.js",
+      "imports": [
+        "fs",
+        "path",
+        "child_process"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "excel",
+      "aliases": [
+        "xls",
+        "xlsx"
+      ],
+      "category": "Documents",
+      "file": "src/Commands/Documents/Excel.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "html",
+      "aliases": [
+        "tohtml",
+        "text2html",
+        "webpage"
+      ],
+      "category": "Documents",
+      "file": "src/Commands/Documents/Html.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "pdf",
+      "aliases": [
+        "topdf",
+        "imgtopdf",
+        "imagepdf",
+        "textpdf"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Documents/PDF.js",
+      "imports": [
+        "pdf-lib",
+        "pdfkit",
+        "pdf-lib"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "scan",
+      "aliases": [
+        "ocr",
+        "read"
+      ],
+      "category": "Documents",
+      "file": "src/Commands/Documents/Scan.js",
+      "imports": [
+        "axios",
+        "form-data"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "csv",
+      "aliases": [
+        "spreadsheet",
+        "csvgen"
+      ],
+      "category": "Documents",
+      "file": "src/Commands/Documents/Spreadsheet.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "txt",
+      "aliases": [
+        "text"
+      ],
+      "category": "Documents",
+      "file": "src/Commands/Documents/Text.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "vcf",
+      "aliases": [
+        "contact",
+        "savecontact"
+      ],
+      "category": "Documents",
+      "file": "src/Commands/Documents/Vcf.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "xml",
+      "aliases": [
+        "xmlgen",
+        "xmlfile"
+      ],
+      "category": "Documents",
+      "file": "src/Commands/Documents/XML.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "zip",
+      "aliases": [
+        "tozip",
+        "archive"
+      ],
+      "category": "Documents",
+      "file": "src/Commands/Documents/Zip.js",
+      "imports": [
+        "fs",
+        "path",
+        "archiver"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "allfonts",
+      "aliases": [
+        "allfont"
+      ],
+      "category": "Converter",
+      "file": "src/Commands/Documents/allfont.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Documents/allfont.js, src/Commands/Documents/allfonts.js"
+    },
+    {
+      "name": "allfonts",
+      "aliases": [
+        "allfont"
+      ],
+      "category": "Converter",
+      "file": "src/Commands/Documents/allfonts.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Documents/allfont.js, src/Commands/Documents/allfonts.js"
+    },
+    {
+      "name": "comc++",
+      "aliases": [
+        "compresscpp",
+        "minifycpp"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Documents/cc++.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "chart",
+      "aliases": [
+        "graph",
+        "plot",
+        "bargraph"
+      ],
+      "category": "Documents",
+      "file": "src/Commands/Documents/ch.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "comhtml",
+      "aliases": [
+        "compresshtml",
+        "minifyhtml"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Documents/chtml.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "comjs",
+      "aliases": [
+        "compressjs",
+        "minifyjs"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Documents/cjs.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "diary",
+      "aliases": [
+        "journal",
+        "mydiary",
+        "dnote"
+      ],
+      "category": "Documents",
+      "file": "src/Commands/Documents/dairy.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "table",
+      "aliases": [
+        "tbl",
+        "grid"
+      ],
+      "category": "Documents",
+      "file": "src/Commands/Documents/grid.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "html2img",
+      "aliases": [
+        "h2i",
+        "htmltoimg"
+      ],
+      "category": "Converter",
+      "file": "src/Commands/Documents/html2img.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ics",
+      "aliases": [],
+      "category": "Documents",
+      "file": "src/Commands/Documents/ics.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "json",
+      "aliases": [
+        "jsong",
+        "jsonformat",
+        "jsonfile"
+      ],
+      "category": "Documents",
+      "file": "src/Commands/Documents/jason.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "word",
+      "aliases": [
+        "docx",
+        "toword",
+        "text2docx"
+      ],
+      "category": "Documents",
+      "file": "src/Commands/Documents/word.js",
+      "imports": [
+        "fs",
+        "path",
+        "docx"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "®",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Documents/®.js",
+      "imports": [
+        "fs"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "collage",
+      "aliases": [
+        "combine",
+        "merge"
+      ],
+      "category": "Media",
+      "file": "src/Commands/Documents/⎔.js",
+      "imports": [
+        "sharp",
+        "plogme"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "apk",
+      "aliases": [
+        "apkdl"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Downloader/Apk.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "bank",
+      "aliases": [
+        "aza",
+        "account",
+        "sendaza",
+        "setbank",
+        "setaza"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Downloader/Bank.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Downloader/Bank.js, src/Commands/Tools/Bank.js"
+    },
+    {
+      "name": "fbstream",
+      "aliases": [
+        "fbs",
+        "fbsdown"
+      ],
+      "category": "downloader",
+      "file": "src/Commands/Downloader/FB streaming.js",
+      "imports": [
+        "axios",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "fb",
+      "aliases": [
+        "facebook",
+        "fbdown"
+      ],
+      "category": "downloader",
+      "file": "src/Commands/Downloader/Facebook.js",
+      "imports": [
+        "axios",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "Instagram",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Downloader/Instagram.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "mediafire",
+      "aliases": [
+        "mf",
+        "mfdown"
+      ],
+      "category": "Download",
+      "file": "src/Commands/Downloader/Mediafire.js",
+      "imports": [
+        "node-fetch"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "pinterest",
+      "aliases": [
+        "pint",
+        "pindl"
+      ],
+      "category": "Download",
+      "file": "src/Commands/Downloader/Pinterest.js",
+      "imports": [
+        "node-fetch"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "spotify",
+      "aliases": [
+        "sp",
+        "spdl"
+      ],
+      "category": "Download",
+      "file": "src/Commands/Downloader/Spotify.js",
+      "imports": [
+        "node-fetch"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "yts",
+      "aliases": [
+        "streamyt",
+        "ytstream"
+      ],
+      "category": "downloader",
+      "file": "src/Commands/Downloader/Stream YouTube.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "tiktok",
+      "aliases": [
+        "tt",
+        "tiktokdl",
+        "ttdl"
+      ],
+      "category": "downloader",
+      "file": "src/Commands/Downloader/Tikd.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "Upstream",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Downloader/Upstream.js",
+      "imports": [
+        "axios",
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "video",
+      "aliases": [
+        "ytvideo",
+        "ytv"
+      ],
+      "category": "downloader",
+      "file": "src/Commands/Downloader/Video.js",
+      "imports": [
+        "yt-search",
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "yturld",
+      "aliases": [],
+      "category": "Download",
+      "file": "src/Commands/Downloader/Yturl.js",
+      "imports": [
+        "node-fetch"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "d",
+      "aliases": [
+        "download",
+        "dl"
+      ],
+      "category": "Downloader",
+      "file": "src/Commands/Downloader/downloader.js",
+      "imports": [
+        "axios",
+        "mime-types"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "music",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Downloader/music.js",
+      "imports": [
+        "fs"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "play",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Downloader/play.js",
+      "imports": [
+        "crypto",
+        "fs"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "ttld",
+      "aliases": [],
+      "category": "Downloader",
+      "file": "src/Commands/Downloader/ttld.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "unidownload",
+      "aliases": [
+        "unid",
+        "udl",
+        "downloadall"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Downloader/unid.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "yt",
+      "aliases": [
+        "youtube",
+        "ytdl",
+        "youtubedownload"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Downloader/ytd.js",
+      "imports": [
+        "axios",
+        "node:fs",
+        "node:path",
+        "../../Plugin/ytsaveEngine.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "crypto",
+      "aliases": [
+        "coin",
+        "price",
+        "cryptoprice"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Economy/Crypto.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "forex",
+      "aliases": [
+        "fx",
+        "exchange",
+        "rate",
+        "currency"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Economy/Forex.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "New York Stock Exchange",
+      "aliases": [
+        "stocks",
+        "exchange"
+      ],
+      "category": "Finance",
+      "file": "src/Commands/Economy/Market.js",
+      "imports": [
+        "../Core/®-utils",
+        "../Core/®.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "currency",
+      "aliases": [
+        "convert",
+        "exchange",
+        "fxconvert"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Economy/currency.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "economy",
+      "aliases": [
+        "ecoactivate"
+      ],
+      "category": "Economy",
+      "file": "src/Commands/Economy/econ.js",
+      "imports": [
+        "axios",
+        "../../../settings/config",
+        "../../Plugin/identityUtils"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "product",
+      "aliases": [
+        "shop",
+        "sell",
+        "catalog"
+      ],
+      "category": "Shop",
+      "file": "src/Commands/Economy/product.js",
+      "imports": [
+        "crypto",
+        "axios",
+        "form-data",
+        "plogme"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "jok",
+      "aliases": [
+        "funjoke",
+        "randomjoke"
+      ],
+      "category": "fun",
+      "file": "src/Commands/Fun/Hackjokes.js",
+      "imports": [
+        "node-fetch"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "meme",
+      "aliases": [
+        "memes",
+        "cheems"
+      ],
+      "category": "fun",
+      "file": "src/Commands/Fun/Meme.js",
+      "imports": [
+        "node-fetch"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "V",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Fun/V.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "ascii",
+      "aliases": [
+        "bigtext"
+      ],
+      "category": "fun",
+      "file": "src/Commands/Fun/ascii.js",
+      "imports": [
+        "figlet"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "dice",
+      "aliases": [
+        "roll"
+      ],
+      "category": "Fun",
+      "file": "src/Commands/Fun/dice.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "emojimix",
+      "aliases": [
+        "mixemoji",
+        "emoji"
+      ],
+      "category": "fun",
+      "file": "src/Commands/Fun/emojimix.js",
+      "imports": [
+        "fs",
+        "path",
+        "child_process",
+        "../../../library/exif",
+        "../../Plugin/packname"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "fact",
+      "aliases": [
+        "facts",
+        "randomfact",
+        "didyouknow"
+      ],
+      "category": "Fun",
+      "file": "src/Commands/Fun/facts.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "horoscope",
+      "aliases": [
+        "zodiac",
+        "starsign",
+        "astrology"
+      ],
+      "category": "Fun",
+      "file": "src/Commands/Fun/horoscope.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "joke",
+      "aliases": [
+        "jokes",
+        "tellmeajoke"
+      ],
+      "category": "Fun",
+      "file": "src/Commands/Fun/joke.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "quote",
+      "aliases": [
+        "quotes",
+        "motivation"
+      ],
+      "category": "Fun",
+      "file": "src/Commands/Fun/quote.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "Crysnova!",
+      "aliases": [
+        "crys",
+        "crysnova!",
+        "crys!"
+      ],
+      "category": "fun",
+      "file": "src/Commands/Fun/responder.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "2048",
+      "aliases": [
+        "2048game"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/2048.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "8ball",
+      "aliases": [
+        "8ball",
+        "magic8",
+        "fortune"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/8ball.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "dare",
+      "aliases": [
+        "dares",
+        "dodare"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/Dare.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "neverhaveiever",
+      "aliases": [
+        "nhie",
+        "never"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/Nhe.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "wouldyourather",
+      "aliases": [
+        "wyr",
+        "rather"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/Wyr.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "anagram",
+      "aliases": [
+        "scramble",
+        "unscramble",
+        "wordmix"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/anagram.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "breakout",
+      "aliases": [
+        "brick"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/breakout.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "frogger",
+      "aliases": [
+        "frog"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/frogger.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "hint",
+      "aliases": [
+        "answer",
+        "reveal"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/hint.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "sendHtmlPrimitive",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Games/sendHtmlPrimitive.js",
+      "imports": [
+        "crypto",
+        "plogme"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "slots",
+      "aliases": [
+        "slot",
+        "jackpot"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/slots.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "snake",
+      "aliases": [
+        "bluesnake",
+        "snakegame"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/snake (1).js",
+      "imports": [
+        "./sendHtmlPrimitive"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "turbohighway",
+      "aliases": [
+        "th",
+        "turbo"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/tb.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Games/tb.js, src/Commands/Games/turbohighway.js"
+    },
+    {
+      "name": "tictactoe",
+      "aliases": [
+        "ttt",
+        "xo"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/tictactoe.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "truth",
+      "aliases": [
+        "truths",
+        "telltruth"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/truth.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ttt",
+      "aliases": [
+        "tictactoe",
+        "xo"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/ttt.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "turbohighway",
+      "aliases": [
+        "th",
+        "turbo"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/turbohighway.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Games/tb.js, src/Commands/Games/turbohighway.js"
+    },
+    {
+      "name": "wordle",
+      "aliases": [
+        "guessword",
+        "wordgame"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/wordle.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "zombie",
+      "aliases": [
+        "zombies",
+        "survival"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Games/zombie.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "gmpin",
+      "aliases": [
+        "msgpingc"
+      ],
+      "category": "group",
+      "file": "src/Commands/Group/1.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "delgc",
+      "aliases": [
+        "deletegc",
+        "dgc",
+        "groupdelete",
+        "kickall"
+      ],
+      "category": "group",
+      "file": "src/Commands/Group/Closegc.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "addme",
+      "aliases": [
+        "tinyinvite"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/Glink.js",
+      "imports": [
+        "node-fetch"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Group/Glink.js, src/Commands/Group/addme.js"
+    },
+    {
+      "name": "hidetag",
+      "aliases": [
+        "htag",
+        "silenttag"
+      ],
+      "category": "group",
+      "file": "src/Commands/Group/Hidetag.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "join",
+      "aliases": [
+        "entry",
+        "joingc"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Group/Joingc.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "exit",
+      "aliases": [
+        "leavegc"
+      ],
+      "category": "group",
+      "file": "src/Commands/Group/Leave.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "poll",
+      "aliases": [
+        "createpoll",
+        "vote"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/Poll.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "setgpp",
+      "aliases": [
+        "setgrouppp",
+        "setppgroup"
+      ],
+      "category": "group",
+      "file": "src/Commands/Group/Setgpp.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "addme",
+      "aliases": [],
+      "category": "Group",
+      "file": "src/Commands/Group/addme.js",
+      "imports": [
+        "node-fetch"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Group/Glink.js, src/Commands/Group/addme.js"
+    },
+    {
+      "name": "approve",
+      "aliases": [
+        "acceptall",
+        "approveall"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/approved.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Group/approved.js, src/Commands/Group/approveed.js"
+    },
+    {
+      "name": "approve",
+      "aliases": [
+        "acceptall",
+        "approveall"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/approveed.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Group/approved.js, src/Commands/Group/approveed.js"
+    },
+    {
+      "name": "autoadd",
+      "aliases": [
+        "autoapprove",
+        "autoaddreq"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Group/autoadd.js",
+      "imports": [
+        "../../Plugin/configManager",
+        "../../Plugin/autoApprove"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "blockall",
+      "aliases": [
+        "blockallmembers"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/blockall.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "creategc",
+      "aliases": [
+        "creategroup",
+        "newgc",
+        "newgroup"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/creategc.js",
+      "imports": [
+        "node-fetch",
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "delgdesc",
+      "aliases": [
+        "deletedescription"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Group/delgdesc.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "delgpp",
+      "aliases": [
+        "removegpp",
+        "deletegpp",
+        "rmgpp"
+      ],
+      "category": "group",
+      "file": "src/Commands/Group/delgpp.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "dnd",
+      "aliases": [
+        "donotdisturb"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/dnd.js",
+      "imports": [
+        "../../Plugin/configManager",
+        "../../Plugin/identityUtils",
+        "../Owner/mention.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "gdesc",
+      "aliases": [
+        "setdescription"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Group/gdesc.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "getpp",
+      "aliases": [
+        "pp",
+        "profilepic"
+      ],
+      "category": "Utils",
+      "file": "src/Commands/Group/getpp.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "gpp",
+      "aliases": [
+        "grouppp",
+        "grouppic"
+      ],
+      "category": "Utils",
+      "file": "src/Commands/Group/gpp.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "gcname",
+      "aliases": [
+        "setgcname"
+      ],
+      "category": "group",
+      "file": "src/Commands/Group/groupname.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "invite",
+      "aliases": [
+        "grouplink",
+        "glink"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/invite.js",
+      "imports": [
+        "plogme"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "lockgc",
+      "aliases": [
+        "lockgroup",
+        "gclock",
+        "lock",
+        "fulllock"
+      ],
+      "category": "group",
+      "file": "src/Commands/Group/lockgc.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "muteallsticker",
+      "aliases": [
+        "stickerbanall",
+        "banallsticker",
+        "unmuteallsticker"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/muteallsticker.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "mutesch",
+      "aliases": [
+        "mutetime",
+        "schedmute"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/mutesch.js",
+      "imports": [
+        "../../Plugin/mute-core",
+        "node-cron"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "mutesticker",
+      "aliases": [
+        "stickerban",
+        "bansticker",
+        "unmutesticker"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/mutesticker.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "muteuser",
+      "aliases": [
+        "silence",
+        "shutup",
+        "unmuteuser"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/muteuser.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "reject",
+      "aliases": [
+        "rejectall",
+        "denyall"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/registered.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Group/registered.js, src/Commands/Group/reject.js"
+    },
+    {
+      "name": "reject",
+      "aliases": [
+        "rejectall",
+        "denyall"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/reject.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Group/registered.js, src/Commands/Group/reject.js"
+    },
+    {
+      "name": "revoke",
+      "aliases": [
+        "resetlink",
+        "newlink",
+        "revokelink"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Group/resetlink.js",
+      "imports": [
+        "node-fetch"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "saveall",
+      "aliases": [
+        "export",
+        "exportvcf",
+        "savecontacts",
+        "vcfall"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/saveall.js",
+      "imports": [
+        "fs",
+        "path",
+        "../../Plugin/identityUtils"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "tagadmin",
+      "aliases": [
+        "admins",
+        "admin"
+      ],
+      "category": "group",
+      "file": "src/Commands/Group/tegadmin.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "tkick",
+      "aliases": [
+        "tempkick",
+        "tk"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/tkick.js",
+      "imports": [
+        "../../Plugin/tkick",
+        "../../Plugin/identityUtils"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "unlockgc",
+      "aliases": [
+        "unlockgroup",
+        "gcunlock",
+        "unfulllock"
+      ],
+      "category": "group",
+      "file": "src/Commands/Group/unlock.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "unsaveall",
+      "aliases": [
+        "unsavecontacts",
+        "delvcfall",
+        "unsave"
+      ],
+      "category": "Group",
+      "file": "src/Commands/Group/unsaveall.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "gstatus",
+      "aliases": [
+        "groupstatus",
+        "gs",
+        "gstatusall"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Group/⤷.js",
+      "imports": [
+        "sharp",
+        "fs",
+        "path",
+        "plogme"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "toround",
+      "aliases": [
+        "2round",
+        "makeround",
+        "tround"
+      ],
+      "category": "Media",
+      "file": "src/Commands/Media/2round.js",
+      "imports": [
+        "fs",
+        "path",
+        "child_process",
+        "plogme",
+        "../../../library/exif",
+        "../../Plugin/packname"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "stickerpk",
+      "aliases": [
+        "stpk",
+        "setpack",
+        "pk"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Media/Packname.js",
+      "imports": [
+        "plogme",
+        "../../../library/exif",
+        "../../Plugin/packname",
+        "child_process",
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "brat",
+      "aliases": [],
+      "category": "Maker",
+      "file": "src/Commands/Media/bt.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "rounds",
+      "aliases": [
+        "rsticker",
+        "roundsticker"
+      ],
+      "category": "Media",
+      "file": "src/Commands/Media/rounds.js",
+      "imports": [
+        "fs",
+        "path",
+        "child_process",
+        "../../../library/exif",
+        "../../Plugin/packname"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "rtoimg",
+      "aliases": [
+        "rtoimage",
+        "rtovideo",
+        "rtovid",
+        "r2img"
+      ],
+      "category": "Media",
+      "file": "src/Commands/Media/rtoimg.js",
+      "imports": [
+        "fs",
+        "path",
+        "child_process",
+        "plogme"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "spack",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Media/spack.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "sprem",
+      "aliases": [
+        "stickerprem",
+        "spremium"
+      ],
+      "category": "Media",
+      "file": "src/Commands/Media/sprem.js",
+      "imports": [
+        "fs",
+        "path",
+        "child_process",
+        "../../../library/exif",
+        "../../Plugin/packname"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "sticker",
+      "aliases": [
+        "s",
+        "stick"
+      ],
+      "category": "Media",
+      "file": "src/Commands/Media/sticker.js",
+      "imports": [
+        "fs",
+        "path",
+        "child_process",
+        "../../../library/exif",
+        "../../Plugin/packname"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "take",
+      "aliases": [
+        "steal",
+        "takesticker",
+        "takes"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Media/take.js",
+      "imports": [
+        "plogme",
+        "../../../library/exif",
+        "../../Plugin/packname"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "togif",
+      "aliases": [
+        "sticker2gif",
+        "stktogif",
+        "video2gif",
+        "v2gif"
+      ],
+      "category": "Media",
+      "file": "src/Commands/Media/togif.js",
+      "imports": [
+        "fs",
+        "path",
+        "child_process",
+        "sharp",
+        "fluent-ffmpeg"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "toimg",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Media/toimg.js",
+      "imports": [
+        "fs",
+        "sharp"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "tgsticker",
+      "aliases": [
+        "tg",
+        "telegramsticker",
+        "tgs"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Media/⩇⩇:⩇⩇.js",
+      "imports": [
+        "node-fetch",
+        "fs",
+        "path",
+        "child_process",
+        "../../../library/exif",
+        "../../Plugin/packname"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "matrix",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/###################.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "1917",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/##################.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "arena",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/#################.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "blackpink",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/################.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "devil",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/###############.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "glitch",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/##############.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "fire",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/#############.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "hacker",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/############.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ice",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/###########.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "impressive",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/##########.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "leaves",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/#########.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "light",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/#######.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "metallic",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/######.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "thunder",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/#####.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "snow",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/####.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "sand",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/###.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "purplet",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/##.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "neont",
+      "aliases": [],
+      "category": "textmaker",
+      "file": "src/Commands/Media-Editor/#.js",
+      "imports": [
+        "mumaker"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "brightness",
+      "aliases": [
+        "bright"
+      ],
+      "category": "media",
+      "file": "src/Commands/Media-Editor/Bright.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "cyan",
+      "aliases": [],
+      "category": "media",
+      "file": "src/Commands/Media-Editor/Cyan.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "glow",
+      "aliases": [],
+      "category": "media",
+      "file": "src/Commands/Media-Editor/Glow.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "gold",
+      "aliases": [],
+      "category": "media",
+      "file": "src/Commands/Media-Editor/Gold.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "gray",
+      "aliases": [
+        "grey"
+      ],
+      "category": "media",
+      "file": "src/Commands/Media-Editor/Gray.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "green",
+      "aliases": [],
+      "category": "media",
+      "file": "src/Commands/Media-Editor/Green.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "invert",
+      "aliases": [],
+      "category": "media",
+      "file": "src/Commands/Media-Editor/Invert.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "pixel",
+      "aliases": [],
+      "category": "media",
+      "file": "src/Commands/Media-Editor/Pixel.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "purple",
+      "aliases": [],
+      "category": "media",
+      "file": "src/Commands/Media-Editor/Purple.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "red",
+      "aliases": [],
+      "category": "media",
+      "file": "src/Commands/Media-Editor/Red.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "sparkle",
+      "aliases": [],
+      "category": "media",
+      "file": "src/Commands/Media-Editor/Sparkle.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "upscale",
+      "aliases": [],
+      "category": "media",
+      "file": "src/Commands/Media-Editor/Upscale.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "xblur",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Media-Editor/blure.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "nosound",
+      "aliases": [
+        "mutevid",
+        "silent",
+        "noso"
+      ],
+      "category": "Media-Editor",
+      "file": "src/Commands/Media-Editor/nosound.js",
+      "imports": [
+        "fs",
+        "path",
+        "child_process",
+        "ffmpeg-static"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "〄",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Media-Editor/〄.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "bury",
+      "aliases": [],
+      "category": "media",
+      "file": "src/Commands/Overlays/1.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "jail",
+      "aliases": [],
+      "category": "media",
+      "file": "src/Commands/Overlays/2.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "kiss",
+      "aliases": [],
+      "category": "media",
+      "file": "src/Commands/Overlays/3.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "wanted",
+      "aliases": [],
+      "category": "media",
+      "file": "src/Commands/Overlays/4.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "5",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Overlays/5.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "contrast",
+      "aliases": [],
+      "category": "media",
+      "file": "src/Commands/Overlays/Contrast.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "rotate",
+      "aliases": [],
+      "category": "media",
+      "file": "src/Commands/Overlays/Rotate.js",
+      "imports": [
+        "../Core/,,.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "shit",
+      "aliases": [],
+      "category": "Image-Edit",
+      "file": "src/Commands/Overlays/_ (9).js",
+      "imports": [
+        "../Core/֎.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "greyscale",
+      "aliases": [
+        "grayscale",
+        "bw",
+        "blackwhite"
+      ],
+      "category": "Image-Edit",
+      "file": "src/Commands/Overlays/__ (6).js",
+      "imports": [
+        "../Core/֎"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "trigger",
+      "aliases": [
+        "triggered"
+      ],
+      "category": "Image-Edit",
+      "file": "src/Commands/Overlays/__ (7).js",
+      "imports": [
+        "../Core/֎"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "funny",
+      "aliases": [
+        "jokeoverhead",
+        "funny",
+        "joke"
+      ],
+      "category": "Image-Edit",
+      "file": "src/Commands/Overlays/___ (2).js",
+      "imports": [
+        "../Core/֎"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "trash",
+      "aliases": [
+        "garbage"
+      ],
+      "category": "Image-Edit",
+      "file": "src/Commands/Overlays/___ (4).js",
+      "imports": [
+        "../Core/֎"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "sepia",
+      "aliases": [
+        "vintage",
+        "old"
+      ],
+      "category": "Image-Edit",
+      "file": "src/Commands/Overlays/____ (16).js",
+      "imports": [
+        "../Core/֎"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "rainbow",
+      "aliases": [
+        "pride",
+        "lgbt"
+      ],
+      "category": "Image-Edit",
+      "file": "src/Commands/Overlays/_____ (3).js",
+      "imports": [
+        "../Core/֎"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "hitler",
+      "aliases": [],
+      "category": "Image-Edit",
+      "file": "src/Commands/Overlays/______ (8).js",
+      "imports": [
+        "../Core/֎"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "affect",
+      "aliases": [
+        "baby",
+        "cry"
+      ],
+      "category": "Image-Edit",
+      "file": "src/Commands/Overlays/_______ (6).js",
+      "imports": [
+        "../Core/֎"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "circle",
+      "aliases": [
+        "round"
+      ],
+      "category": "Image-Edit",
+      "file": "src/Commands/Overlays/_________ (3).js",
+      "imports": [
+        "../Core/֎"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "facepalm",
+      "aliases": [
+        "fp",
+        "palm"
+      ],
+      "category": "Image-Edit",
+      "file": "src/Commands/Overlays/__________ (4).js",
+      "imports": [
+        "../Core/֎"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "〽️",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Overlays/〽️.js",
+      "imports": [
+        "form-data"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "autorecording",
+      "aliases": [
+        "autorec",
+        "recording"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/Autorecording.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "clearcmd",
+      "aliases": [
+        "resetcmd",
+        "clrcmd"
+      ],
+      "category": "owner",
+      "file": "src/Commands/Owner/Clearcmd.js",
+      "imports": [
+        "fs",
+        "path",
+        "./setcmd.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "___",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Owner/___.js",
+      "imports": [
+        "fs"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "addstatus",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Owner/addstatus.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "afk",
+      "aliases": [
+        "away"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/afk.js",
+      "imports": [
+        "fs",
+        "path",
+        "../../Plugin/identityUtils"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "allvar",
+      "aliases": [
+        "listvars",
+        "vars"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/allvar.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "anticall",
+      "aliases": [
+        "ac",
+        "callblock"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/anticall.js",
+      "imports": [
+        "../../Plugin/anticallManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ass",
+      "aliases": [
+        "autosave",
+        "autostatus"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/ass.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "autoreact",
+      "aliases": [
+        "randomreact"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Owner/autoreact.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "autoread",
+      "aliases": [
+        "setread"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/autoread.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "getstatus",
+      "aliases": [
+        "userstatus",
+        "statuscheck",
+        "viewstatus"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/baileys.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "wa",
+      "aliases": [
+        "baileys275",
+        "wafeatures"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/baileys274.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "bancheck",
+      "aliases": [
+        "checkban",
+        "numbercheck",
+        "bc"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/bancheck.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "calllink",
+      "aliases": [
+        "createcall",
+        "vclink"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/calllink.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "delay",
+      "aliases": [
+        "delaydemo"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/delay.js",
+      "imports": [
+        "../../../Bug/delay-demo"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "delcmd",
+      "aliases": [
+        "uncmd",
+        "unbind"
+      ],
+      "category": "owner",
+      "file": "src/Commands/Owner/delcmd.js",
+      "imports": [
+        "fs",
+        "path",
+        "./setcmd.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "delemoji",
+      "aliases": [
+        "delemoji",
+        "unbindemoji",
+        "rmeemoji",
+        "delemojicmd"
+      ],
+      "category": "owner",
+      "file": "src/Commands/Owner/delcmdemoji.js",
+      "imports": [
+        "./setemoji.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "delpp",
+      "aliases": [
+        "removepp",
+        "deletepp",
+        "rmpp"
+      ],
+      "category": "utility",
+      "file": "src/Commands/Owner/delpp.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "dual",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Owner/dual.js",
+      "imports": [
+        "../../Plugin/accessListManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "forward",
+      "aliases": [
+        "fwd",
+        "sendto"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Owner/fw.js",
+      "imports": [
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "gen4",
+      "aliases": [
+        "gen4menu",
+        "richmenu"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/gen4.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ownerstatus",
+      "aliases": [
+        "owner-groupstatus"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/groupstatus.js",
+      "imports": [
+        "./poststory.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "listemoji",
+      "aliases": [
+        "emojilist",
+        "emojicmds",
+        "listemoji"
+      ],
+      "category": "owner",
+      "file": "src/Commands/Owner/listemoji.js",
+      "imports": [
+        "./setemoji.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "mention",
+      "aliases": [
+        "tagme",
+        "owntag"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/mention.js",
+      "imports": [
+        "fs",
+        "path",
+        "../../Plugin/accessListManager",
+        "../../Plugin/identityUtils",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "mode",
+      "aliases": [],
+      "category": "Bot",
+      "file": "src/Commands/Owner/mode.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "owner",
+      "aliases": [
+        "creator",
+        "admin"
+      ],
+      "category": "Bot",
+      "file": "src/Commands/Owner/owner.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "pinchat",
+      "aliases": [],
+      "category": "Tools",
+      "file": "src/Commands/Owner/pinchat.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Owner/pinchat.js, src/Commands/Tools/pinchat.js"
+    },
+    {
+      "name": "pooltable",
+      "aliases": [
+        "poolcard",
+        "nativepool",
+        "poolrich",
+        "spinwheel",
+        "wheel"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/poolcard.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "poststatus",
+      "aliases": [
+        "personalstatus",
+        "statuspost"
+      ],
+      "category": "Unknown",
+      "file": "src/Commands/Owner/poststatus.js",
+      "imports": [
+        "./poststory.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "poststory",
+      "aliases": [
+        "story",
+        "statuspost"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/poststory.js",
+      "imports": [
+        "plogme",
+        "../../Plugin/identityUtils"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "report",
+      "aliases": [
+        "reportwa"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/report.js",
+      "imports": [
+        "../../Plugin/identityUtils"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "richgen",
+      "aliases": [
+        "test-richgen",
+        "generationtest"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/richgen.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "save",
+      "aliases": [
+        "download",
+        "savemedia"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Owner/save.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "savemode",
+      "aliases": [
+        "savedmode",
+        "abu",
+        "autoblockunknown"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/savemode.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "savestatus",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Owner/savestatus.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "bio",
+      "aliases": [
+        "setbio",
+        "about",
+        "setabout"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/sb.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "select",
+      "aliases": [
+        "list",
+        "listmsg",
+        "listmessage"
+      ],
+      "category": "Interactive",
+      "file": "src/Commands/Owner/select.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "setcmd",
+      "aliases": [
+        "bindcmd",
+        "stickercmd"
+      ],
+      "category": "owner",
+      "file": "src/Commands/Owner/setcmd.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "setemoji",
+      "aliases": [
+        "bindemoji",
+        "emojicmd",
+        "emoji2cmd",
+        "addemoji"
+      ],
+      "category": "owner",
+      "file": "src/Commands/Owner/setemoji.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "setpp",
+      "aliases": [
+        "setbotpp",
+        "setppbot",
+        "setprofilepic"
+      ],
+      "category": "owner",
+      "file": "src/Commands/Owner/setpp.js",
+      "imports": [
+        "plogme"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "setname",
+      "aliases": [
+        "myname",
+        "username"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/sn.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ssd",
+      "aliases": [
+        "secureservice",
+        "ssdon",
+        "ssdoff"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/ssd.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Bot/ssd.js, src/Commands/Owner/ssd.js"
+    },
+    {
+      "name": "ssl",
+      "aliases": [
+        "tssl",
+        "securelabel"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/ssl.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "statusview",
+      "aliases": [
+        "statuslike",
+        "autoview",
+        "autolike"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/statusview.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "sudo",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Owner/sudo.js",
+      "imports": [
+        "../../Plugin/accessListManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "testcard",
+      "aliases": [
+        "cardtest"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/testcard.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "testwallpaper",
+      "aliases": [
+        "testtheme"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/testwallpaper.js",
+      "imports": [
+        "./wptest.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "wallpaperids",
+      "aliases": [
+        "themeids"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/wallpaperids.js",
+      "imports": [
+        "./wptest.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "webviewtest",
+      "aliases": [
+        "miniapp",
+        "signalapp",
+        "wvtest"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/webviewtest.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "teststicker",
+      "aliases": [
+        "wptest"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/wptest.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "x",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Owner/x.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "ཽ",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Owner/ཽ.js",
+      "imports": [
+        "fs"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "sscmd",
+      "aliases": [
+        "setss",
+        "sstrigger"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/⎔.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "toggleprivate",
+      "aliases": [
+        "privatereact",
+        "prreact"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/⚇.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "cmdreact",
+      "aliases": [
+        "togglereact",
+        "reactionmode",
+        "creact"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/⚉.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "resend",
+      "aliases": [
+        "repost"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Owner/✆.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ghosted",
+      "aliases": [
+        "statusghost",
+        "cleanser",
+        "sg"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/Owner/🔖.js",
+      "imports": [
+        "../../Plugin/statusHandler"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "myfavorite",
+      "aliases": [
+        "myfav",
+        "addmyfav"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Privacy/myfav.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "lastseen",
+      "aliases": [
+        "setlastseen",
+        "lastseenprivacy"
+      ],
+      "category": "Privacy",
+      "file": "src/Commands/Privacy/privacy.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "riddle",
+      "aliases": [
+        "riddles",
+        "puzzle",
+        "brainteaser"
+      ],
+      "category": "Quiz",
+      "file": "src/Commands/Quiz/Riddle.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "mathquiz",
+      "aliases": [
+        "math",
+        "maths",
+        "calculate"
+      ],
+      "category": "Quiz",
+      "file": "src/Commands/Quiz/mq.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "trivia",
+      "aliases": [
+        "quiz",
+        "question",
+        "triviaquestion"
+      ],
+      "category": "Quiz",
+      "file": "src/Commands/Quiz/trivia.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "animehentai",
+      "aliases": [
+        "ahentai"
+      ],
+      "category": "Random",
+      "file": "src/Commands/Random/⇆.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "❚",
+      "aliases": [],
+      "category": "fun",
+      "file": "src/Commands/Reaction/❚.js",
+      "imports": [
+        "../Core/ⓘ.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Core/❚.js, src/Commands/Reaction/❚.js"
+    },
+    {
+      "name": "animesearch",
+      "aliases": [
+        "anisearch",
+        "findanime"
+      ],
+      "category": "Anime",
+      "file": "src/Commands/Search/Animesearch.js",
+      "imports": [
+        "axios",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "dictionary",
+      "aliases": [
+        "dict",
+        "define",
+        "meaning"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Search/Dictionary.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "Felo",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Search/Felo.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "fetch",
+      "aliases": [],
+      "category": "Search",
+      "file": "src/Commands/Search/Fetch.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "lyrics",
+      "aliases": [
+        "lyric",
+        "songlyrics"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Search/Lyrics.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Search/Lyrics.js, src/Commands/Search/lyrics.js"
+    },
+    {
+      "name": "movieintel",
+      "aliases": [
+        "moviei",
+        "filmintel",
+        "movies"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Search/Mvi.js",
+      "imports": [
+        "axios",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "news",
+      "aliases": [
+        "headlines",
+        "latest",
+        "n"
+      ],
+      "category": "News",
+      "file": "src/Commands/Search/News.js",
+      "imports": [
+        "../Core/!!!.js",
+        "../Core/®-utils",
+        "../Core/®.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "nameinfo",
+      "aliases": [
+        "name",
+        "meaning",
+        "namesake"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Search/Ninfo.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "phoneinfo",
+      "aliases": [
+        "phone",
+        "number",
+        "whoiscalling"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Search/Pinfo.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ringtone",
+      "aliases": [
+        "ring",
+        "tones"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Search/Ringtone.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "Sounds",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Search/Sounds.js",
+      "imports": [
+        "node-fetch"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "taxinfo",
+      "aliases": [
+        "tax",
+        "deadline",
+        "irs"
+      ],
+      "category": "Info",
+      "file": "src/Commands/Search/Taxinfo.js",
+      "imports": [
+        "axios",
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "wallpaper",
+      "aliases": [
+        "wlp",
+        "wall"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Search/WP.js",
+      "imports": [
+        "axios",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "weather",
+      "aliases": [
+        "wthr",
+        "forecast"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Search/Weather.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/AI/Weather.js, src/Commands/Search/Weather.js"
+    },
+    {
+      "name": "Web",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Search/Web.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "ytranscript",
+      "aliases": [
+        "yttext",
+        "yttranscript"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Search/Ytt.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Search/Ytt.js, src/Commands/Search/ytts.js"
+    },
+    {
+      "name": "chrome",
+      "aliases": [],
+      "category": "Search",
+      "file": "src/Commands/Search/chrome.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "countryinfo",
+      "aliases": [
+        "country",
+        "nation",
+        "flag"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Search/cinfo.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "element",
+      "aliases": [
+        "elements",
+        "periodic",
+        "ptable"
+      ],
+      "category": "Education",
+      "file": "src/Commands/Search/element.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "esports",
+      "aliases": [
+        "esport"
+      ],
+      "category": "Entertainment",
+      "file": "src/Commands/Search/esports.js",
+      "imports": [
+        "../Core/®-utils",
+        "../Core/®.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "githubinfo",
+      "aliases": [
+        "gituser",
+        "githubuser",
+        "dev"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Search/gtuser.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "history",
+      "aliases": [
+        "today",
+        "onthisday",
+        "hist"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Search/history.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "iplookup",
+      "aliases": [
+        "ip",
+        "ipinfo",
+        "iptrace",
+        "trackip"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Search/ipup.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "livematch",
+      "aliases": [
+        "live",
+        "match",
+        "football"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Search/livematch.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "lyrics",
+      "aliases": [
+        "lyric",
+        "songlyrics"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Search/lyrics.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Search/Lyrics.js, src/Commands/Search/lyrics.js"
+    },
+    {
+      "name": "movie",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Search/movie.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "npminfo",
+      "aliases": [
+        "package",
+        "npmjs"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Search/npminfo.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "shazam",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Search/shazam.js",
+      "imports": [
+        "fs",
+        "form-data",
+        "child_process",
+        "axios",
+        "../Core/•.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "space",
+      "aliases": [
+        "nasa",
+        "apod",
+        "astronomy"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Search/space.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "tiktoksearch",
+      "aliases": [
+        "ttsearch",
+        "tiktoks"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Search/ttsearch.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "wiki",
+      "aliases": [
+        "wikipedia",
+        "wikisearch",
+        "wp"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Search/wiki.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "ytranscript",
+      "aliases": [
+        "yttext",
+        "yttranscript"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Search/ytts.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Search/Ytt.js, src/Commands/Search/ytts.js"
+    },
+    {
+      "name": "£x",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Search/£x.js",
+      "imports": [
+        "fs",
+        "path",
+        "../Utils/sticker-converter"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "backup",
+      "aliases": [
+        "savebackup",
+        "cloudbackup"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/System/BKRS.js",
+      "imports": [
+        "fs",
+        "path",
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "Link",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/System/Link.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "alive",
+      "aliases": [],
+      "category": "info",
+      "file": "src/Commands/System/aliv.js",
+      "imports": [
+        "os"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "autoupdate",
+      "aliases": [
+        "autoupd",
+        "autoupgrade"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/System/autoupdate.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "delvar",
+      "aliases": [
+        "dv"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/System/delvar.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "deploy",
+      "aliases": [
+        "pair"
+      ],
+      "category": "System",
+      "file": "src/Commands/System/deploy.js",
+      "imports": [
+        "node:crypto"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "format",
+      "aliases": [
+        "flash",
+        "cleaninstall",
+        "factoryreset"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/System/format.js",
+      "imports": [
+        "fs",
+        "path",
+        "axios",
+        "adm-zip"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "getvar",
+      "aliases": [
+        "gv"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/System/getvar.js",
+      "imports": [
+        "../../Plugin/configManager"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "issues",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/System/issues.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "plugin",
+      "aliases": [
+        "install",
+        "addplugin",
+        "getplugin"
+      ],
+      "category": "owner",
+      "file": "src/Commands/System/plugin.js",
+      "imports": [
+        "fs",
+        "path",
+        "https",
+        "http",
+        "../../../src/Plugin/crysCmd"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "plugins",
+      "aliases": [
+        "listplugins",
+        "pluginlist"
+      ],
+      "category": "owner",
+      "file": "src/Commands/System/plugins.js",
+      "imports": [
+        "./plugin.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "reload",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/System/reload.js",
+      "imports": [
+        "../../Plugin/crysLoadCmd"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "restart",
+      "aliases": [
+        "reboot"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/System/restart.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "setvar",
+      "aliases": [
+        "sv"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/System/setvar.js",
+      "imports": [
+        "../../Plugin/configManager",
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "stats",
+      "aliases": [
+        "botinfo",
+        "status",
+        "st"
+      ],
+      "category": "System",
+      "file": "src/Commands/System/stats.js",
+      "imports": [
+        "../../Plugin/configManager",
+        "../Bot/botfont.js",
+        "path",
+        "fs",
+        "../../../settings/config",
+        "../Owner/autoreact.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "togglepp",
+      "aliases": [],
+      "category": "Owner",
+      "file": "src/Commands/System/togpp.js",
+      "imports": [
+        "../../Plugin/configManager",
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "unplugin",
+      "aliases": [
+        "uninstall",
+        "removeplugin",
+        "delplugin"
+      ],
+      "category": "owner",
+      "file": "src/Commands/System/unplugin.js",
+      "imports": [
+        "fs",
+        "path",
+        "./plugin.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "version",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/System/version.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "eval",
+      "aliases": [
+        "#",
+        ">"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/System/£.js",
+      "imports": [
+        "util",
+        "fs",
+        "path",
+        "child_process"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "update",
+      "aliases": [
+        "upgrade",
+        "upd"
+      ],
+      "category": "Owner",
+      "file": "src/Commands/System/📅.js",
+      "imports": [
+        "fs",
+        "path",
+        "axios",
+        "adm-zip",
+        "../../Plugin/uptime"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "bank",
+      "aliases": [
+        "aza",
+        "account",
+        "sendaza",
+        "setbank",
+        "setaza"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Tools/Bank.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Downloader/Bank.js, src/Commands/Tools/Bank.js"
+    },
+    {
+      "name": "bible",
+      "aliases": [
+        "verse",
+        "scripture",
+        "bibleverse"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Tools/Bible.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "Script",
+      "aliases": [],
+      "category": "tools",
+      "file": "src/Commands/Tools/Botfont.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "mylink",
+      "aliases": [
+        "chatlink",
+        "clink"
+      ],
+      "category": "General",
+      "file": "src/Commands/Tools/Chatlink.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "password",
+      "aliases": [
+        "passwd",
+        "passcheck",
+        "strength"
+      ],
+      "category": "Games",
+      "file": "src/Commands/Tools/Pcheck.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "preview",
+      "aliases": [
+        "lpreview",
+        "linkcard"
+      ],
+      "category": "Utility",
+      "file": "src/Commands/Tools/Preview.js",
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "quran",
+      "aliases": [
+        "koran",
+        "surah",
+        "ayah",
+        "ayat",
+        "alkareem"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Tools/Quran.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "Reminde",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Tools/Reminde.js",
+      "imports": [
+        "fs"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "wss",
+      "aliases": [
+        "wssp",
+        "wsstab",
+        "wssfull",
+        "wssmobile",
+        "wssweb"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Tools/Ss.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "tanak",
+      "aliases": [
+        "tanakh",
+        "torah",
+        "hebrew",
+        "jewish"
+      ],
+      "category": "Search",
+      "file": "src/Commands/Tools/Tanak.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "antidelete",
+      "aliases": [
+        "deletedetect"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Tools/antidelete.js",
+      "imports": [
+        "fs",
+        "path",
+        "plogme"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "antiedit",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Tools/antiedit.js",
+      "imports": [
+        "fs",
+        "plogme"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "calendar",
+      "aliases": [
+        "cal",
+        "month",
+        "kalendar"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Tools/calendar.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "clearchat",
+      "aliases": [
+        "clear",
+        "clr",
+        "wipe"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Tools/clear.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "device",
+      "aliases": [
+        "checkdevice",
+        "dev"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Tools/device.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "distance",
+      "aliases": [
+        "dist",
+        "directions",
+        "route"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Tools/direction.js",
+      "imports": [
+        "axios",
+        "staticmaps",
+        "sharp",
+        "path",
+        "fs"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "encryptcode",
+      "aliases": [
+        "encrypt",
+        "codeencrypt",
+        "protectcode"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Tools/encrypt.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "event",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Tools/event.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "font",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Tools/font.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "jid",
+      "aliases": [
+        "getjid",
+        "chatid"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Tools/jid.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "location",
+      "aliases": [
+        "loc",
+        "mylocation",
+        "whereami",
+        "shareloc"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Tools/location.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "note",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Tools/note.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "pin",
+      "aliases": [
+        "pinmsg",
+        "unpin",
+        "pinned"
+      ],
+      "category": "Admin",
+      "file": "src/Commands/Tools/pin.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "pinchat",
+      "aliases": [],
+      "category": "Tools",
+      "file": "src/Commands/Tools/pinchat.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Owner/pinchat.js, src/Commands/Tools/pinchat.js"
+    },
+    {
+      "name": "remcmd",
+      "aliases": [],
+      "category": "Tools",
+      "file": "src/Commands/Tools/remcmd.js",
+      "imports": [
+        "fs"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "deleted",
+      "aliases": [
+        "getdeleted",
+        "retrieve"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Tools/retrieve.js",
+      "imports": [
+        "../../../library/quoted.js",
+        "plogme"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Tools/retrieve.js, src/Commands/Utils/deleted.js"
+    },
+    {
+      "name": "calculator",
+      "aliases": [
+        "calc",
+        "scientificcalc"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Tools/scientific-calc.js",
+      "imports": [
+        "mathjs"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "send_file",
+      "aliases": [
+        "sendfile"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Tools/send_file.js",
+      "imports": [
+        "../Core/plogme"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "settrd",
+      "aliases": [
+        "settr",
+        "setdefaultlang"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Tools/settrd.js",
+      "imports": [
+        "../Core/✐"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "short",
+      "aliases": [
+        "shorten",
+        "sl",
+        "shortlink"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Tools/sl.js",
+      "imports": [
+        "axios"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "tr",
+      "aliases": [
+        "translate",
+        "trans"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Tools/tr.js",
+      "imports": [
+        "../../Plugin/translationService"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "trd",
+      "aliases": [
+        "trdefault"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Tools/trd.js",
+      "imports": [
+        "../Core/✐",
+        "../../Plugin/translationService"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "@",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Utils/@.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "callme",
+      "aliases": [
+        "myphone",
+        "ringme"
+      ],
+      "category": "Utils",
+      "file": "src/Commands/Utils/Callme.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "RapidAPI (Primary)",
+      "aliases": [
+        "timedefault",
+        "mytime",
+        "dt"
+      ],
+      "category": "Info",
+      "file": "src/Commands/Utils/Default_Time.js",
+      "imports": [
+        "axios",
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Core/®-utils.js, src/Commands/Utils/Default_Time.js"
+    },
+    {
+      "name": "qr",
+      "aliases": [
+        "qrcode",
+        "makeqr",
+        "qrread",
+        "readqr",
+        "scanqr",
+        "deqr"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Utils/QRcode.js",
+      "imports": [
+        "qrcode",
+        "canvas",
+        "jsqr"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "resize",
+      "aliases": [
+        "resize",
+        "scale",
+        "fit",
+        "crop",
+        "square",
+        "widen",
+        "heighten",
+        "compress",
+        "optimize"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Utils/Resize.js",
+      "imports": [
+        "sharp",
+        "fs",
+        "path",
+        "child_process"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "settmd",
+      "aliases": [
+        "settime",
+        "settimezone",
+        "st"
+      ],
+      "category": "Info",
+      "file": "src/Commands/Utils/Settmd.js",
+      "imports": [
+        "axios",
+        "fs",
+        "path"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "sketcher",
+      "aliases": [
+        "sketch",
+        "pencil",
+        "draw"
+      ],
+      "category": "image",
+      "file": "src/Commands/Utils/Sketcher.js",
+      "imports": [
+        "sharp"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "tempemail",
+      "aliases": [
+        "tmpmail",
+        "tempmail",
+        "tempm"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Utils/Tempemail.js",
+      "imports": [
+        "node-fetch"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "nurl",
+      "aliases": [
+        "tourl",
+        "upload"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Utils/Temurl.js",
+      "imports": [
+        "axios",
+        "form-data"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "tm",
+      "aliases": [
+        "time",
+        "timezone",
+        "clock"
+      ],
+      "category": "Info",
+      "file": "src/Commands/Utils/Time.js",
+      "imports": [
+        "axios",
+        "fs",
+        "path",
+        "../Core/®.js"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "sms24numbers",
+      "aliases": [
+        "sms24",
+        "smsnums",
+        "24numbers"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Utils/Virtualnumb.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "sms24msg",
+      "aliases": [
+        "24msg",
+        "smsget",
+        "readsms"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Utils/Virtualnumbmsg.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "call",
+      "aliases": [
+        "phone",
+        "dial",
+        "ring"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Utils/call.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "comic2",
+      "aliases": [
+        "cartoon2",
+        "toon2",
+        "anime"
+      ],
+      "category": "image",
+      "file": "src/Commands/Utils/cartoon.js",
+      "imports": [
+        "sharp",
+        "jimp"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Utils/cartoon.js, src/Commands/Utils/cartoon2.js"
+    },
+    {
+      "name": "comic2",
+      "aliases": [
+        "cartoon2",
+        "toon2",
+        "anime"
+      ],
+      "category": "image",
+      "file": "src/Commands/Utils/cartoon2.js",
+      "imports": [
+        "sharp",
+        "jimp"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Utils/cartoon.js, src/Commands/Utils/cartoon2.js"
+    },
+    {
+      "name": "deleted",
+      "aliases": [
+        "getdeleted",
+        "retrieve"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Utils/deleted.js",
+      "imports": [
+        "../../../library/quoted.js",
+        "plogme"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "duplicate command name: src/Commands/Tools/retrieve.js, src/Commands/Utils/deleted.js"
+    },
+    {
+      "name": "md",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Utils/md.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "mdhelp",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Utils/mdhelp.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": true,
+      "lastError": "missing module.exports"
+    },
+    {
+      "name": "open",
+      "aliases": [
+        "view",
+        "website"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Utils/open.js",
+      "imports": [],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "sticker-converter",
+      "aliases": [],
+      "category": "Unknown",
+      "file": "src/Commands/Utils/sticker-converter.js",
+      "imports": [
+        "../../../library/exif"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "webp",
+      "aliases": [
+        "emoji",
+        "tgemoji"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Utils/webp.js",
+      "imports": [
+        "sharp",
+        "fs",
+        "path",
+        "child_process"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "url",
+      "aliases": [
+        "upload",
+        "mediaurl"
+      ],
+      "category": "tools",
+      "file": "src/Commands/Utils/⇆.js",
+      "imports": [
+        "axios",
+        "form-data"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    },
+    {
+      "name": "raw",
+      "aliases": [
+        "paste",
+        "textcdn",
+        "bin"
+      ],
+      "category": "Tools",
+      "file": "src/Commands/Utils/➍.js",
+      "imports": [
+        "axios",
+        "form-data",
+        "../../../settings/config"
+      ],
+      "syntax": true,
+      "syntaxError": "",
+      "broken": false,
+      "lastError": ""
+    }
+  ]
+}

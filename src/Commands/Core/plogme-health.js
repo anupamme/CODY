@@ -9,6 +9,27 @@ const CRITICAL_FILES = ['index.js', 'src/Plugin/crysLoadCmd.js', 'src/Plugin/cry
 
 function check(name, ok, details = '') { return { name, ok: !!ok, details: String(details || '') }; }
 
+function recentCrashLines() {
+    const candidates = ['logs', 'log', 'database'];
+    const lines = [];
+    for (const rel of candidates) {
+        const dir = path.join(ROOT, rel);
+        if (!fs.existsSync(dir)) continue;
+        let entries = [];
+        try { entries = fs.readdirSync(dir, { withFileTypes: true }); } catch { continue; }
+        for (const entry of entries) {
+            if (!entry.isFile() || !/\.(?:log|txt|json)$/i.test(entry.name)) continue;
+            try {
+                const stat = fs.statSync(path.join(dir, entry.name));
+                if (Date.now() - stat.mtimeMs > 24 * 60 * 60 * 1000) continue;
+                const content = fs.readFileSync(path.join(dir, entry.name), 'utf8');
+                lines.push(...content.split(/\r?\n/).filter(line => /(uncaught|unhandled|crash|fatal|process exited|EADDRINUSE)/i.test(line)).slice(-100));
+            } catch {}
+        }
+    }
+    return lines;
+}
+
 function runHealthChecks(options = {}) {
     const checks = [];
     checks.push(check('runtime', Number(process.versions.node.split('.')[0]) >= 20, `Node ${process.version}`));
@@ -25,11 +46,21 @@ function runHealthChecks(options = {}) {
         }
         checks.push(check(rel, valid, details));
     }
+    try {
+        const { buildProjectIndex } = require('./plogme-project-index');
+        const index = buildProjectIndex();
+        checks.push(check('command-index', index.commandCount > 0, `${index.commandCount} commands indexed`));
+        checks.push(check('command-syntax', index.syntaxFailures === 0, `${index.syntaxFailures} syntax failures`));
+        checks.push(check('command-exports', index.commands.every(command => !command.lastError?.includes('missing module.exports')), 'module.exports present'));
+        checks.push(check('duplicate-command-names', index.duplicateNames.length === 0, index.duplicateNames.map(item => item.name).join(', ')));
+    } catch (error) { checks.push(check('command-index', false, error.message)); }
+    const crashes = recentCrashLines();
+    checks.push(check('recent-crash-loop', crashes.length < 5, crashes.length ? `${crashes.length} recent crash indicators` : 'none detected'));
     const db = path.join(ROOT, 'database');
     try { fs.mkdirSync(db, { recursive: true }); const probe = path.join(db, `.plogme-health-${process.pid}`); fs.writeFileSync(probe, 'ok'); fs.unlinkSync(probe); checks.push(check('database-writable', true, db)); }
     catch (error) { checks.push(check('database-writable', false, error.message)); }
     const failed = checks.filter(item => !item.ok);
-    return { ok: failed.length === 0, checkedAt: new Date().toISOString(), checks, failed };
+    return { ok: failed.length === 0, checkedAt: new Date().toISOString(), checks, failed, crashIndicators: crashes.slice(-20) };
 }
 
-module.exports = { runHealthChecks, CRITICAL_FILES };
+module.exports = { runHealthChecks, CRITICAL_FILES, recentCrashLines };
