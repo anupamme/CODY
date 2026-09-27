@@ -64,7 +64,7 @@
 ### 🚀 One-Click Deploy
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/crysnovax/CODY)
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/crysnovax/CODY/tree/main)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/crysnovax/cody)
 [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/crysnovax/CODY)
 
 </div>
@@ -459,7 +459,8 @@ async function setupConfiguration() {
     await askForConfig(envPath);
 }
 
-const PROJECT_DIR = 'CODY';
+const PROJECT_DIR = fs.readdirSync(process.cwd(), { withFileTypes: true })
+    .find(entry => entry.isDirectory() && entry.name.toLowerCase() === 'cody')?.name || 'CODY';
 const REPO_URL = 'https://github.com/crysnovax/CODY.git';
 const ENTRY_FILE = 'index.js';
 
