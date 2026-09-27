@@ -1,0 +1,36 @@
+'use strict';
+
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const test = require('node:test');
+const plogme = require('../src/Commands/Core/plogme.js');
+const { buildProjectIndex } = require('../src/Commands/Core/plogme-project-index.js');
+
+const chat = '12025550123-1@g.us';
+const toggleFile = path.join(process.cwd(), 'database', 'plogme_toggle.json');
+const modeFile = path.join(process.cwd(), 'database', 'plogme_mode.json');
+
+test.after(() => {
+    for (const file of [toggleFile, modeFile, path.join(process.cwd(), 'database', 'plogme_index.json')]) {
+        try { fs.unlinkSync(file); } catch {}
+    }
+});
+
+test('group tag mode ignores unmentioned ordinary messages', async () => {
+    plogme.setMode(chat, 'tag');
+    plogme.setEnabled(chat, true);
+    const handled = await plogme.execute(
+        { user: { id: '999@s.whatsapp.net' } },
+        { chat, isGroup: true, text: 'hello everyone', body: 'hello everyone', mentionedJid: [], key: {} },
+        { reply: async () => { throw new Error('must not reply'); } }
+    );
+    assert.equal(handled, false);
+});
+
+test('project index persists broken status and lastError fields', () => {
+    const index = buildProjectIndex();
+    assert.ok(index.commandCount > 0);
+    assert.ok(index.commands.every(command => 'broken' in command && 'lastError' in command));
+    assert.equal(JSON.parse(fs.readFileSync(path.join(process.cwd(), 'database', 'plogme_index.json'), 'utf8')).commandCount, index.commandCount);
+});
