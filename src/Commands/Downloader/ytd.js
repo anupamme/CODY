@@ -1,11 +1,12 @@
 // yt.js — Downloads YouTube media.
 // Primary path: hosted API. Fallback: local `ytsave` (yt-dlp) engine, which
 // keeps .yt working when the API is rate-limited or offline.
-const axios = require('axios');
 const fs = require('node:fs');
 const path = require('node:path');
 
 const engine = require('../../Plugin/ytsaveEngine.js');
+const { request, pickUrl } = require('../../Plugin/prexzyMedia');
+const PREFIX = process.env.PREFIX || '.';
 
 const YOUTUBE_URL = /https?:\/\/(?:www\.|m\.|music\.)?(?:youtube\.com|youtu\.be)\/\S+/i;
 const MAX_PLAYLIST_ITEMS = 10;
@@ -22,20 +23,34 @@ function sendKeysFor(file) {
     return { key: 'video', mimetype: 'video/mp4' };
 }
 
-async function sendFromApi(sock, m, url) {
-    const { data } = await axios.get(
-        `https://docs.prexzyapis.com/download/youtube-video?url=${encodeURIComponent(url)}`,
-        { timeout: 30000 }
+async function sendFromApi(sock, m, url, asAudio = false) {
+    const { data } = await request(asAudio ? 'ytmp3' : 'ytmp4', url);
+    if (data?.status === false || data?.success === false) return false;
+
+    const info = data.info || data.result?.info || {};
+    const mediaUrl = pickUrl(
+        data.download_url,
+        data.url,
+        data.result?.download_url,
+        data.result?.url,
+        data.data?.download_url
     );
+    if (!mediaUrl) return false;
 
-    if (!data?.status || !data.download_url) return false;
-
-    const info = data.info || {};
-    await sock.sendMessage(m.chat, {
-        video: { url: data.download_url },
-        caption: `${info.title || 'YouTube Video'} · ${info.quality || ''}`.trim(),
-        mimetype: 'video/mp4'
-    }, { quoted: m });
+    const title = info.title || data.title || data.result?.title || 'YouTube Media';
+    if (asAudio) {
+        await sock.sendMessage(m.chat, {
+            audio: { url: mediaUrl },
+            mimetype: 'audio/mpeg',
+            fileName: `${title.replace(/[^a-zA-Z0-9]/g, '_').slice(0, 60)}.mp3`
+        }, { quoted: m });
+    } else {
+        await sock.sendMessage(m.chat, {
+            video: { url: mediaUrl },
+            caption: `${title} · ${data.quality || info.quality || ''}`.trim(),
+            mimetype: 'video/mp4'
+        }, { quoted: m });
+    }
 
     return true;
 }
@@ -74,7 +89,7 @@ module.exports = {
     alias: ['youtube', 'ytdl', 'youtubedownload'],
     desc: 'Download YouTube video or audio (hosted API, local yt-dlp fallback)',
     category: 'Search',
-    usage: `${prefix}yt <youtube url> [-a for mp3]`,
+    usage: `${PREFIX}yt <youtube url> [-a for mp3]`,
     examples: ['.yt https://youtu.be/rsF9VaubHWM', '.yt https://youtu.be/rsF9VaubHWM -a'],
 
     execute: async (sock, m, { args, reply }) => {
@@ -83,13 +98,13 @@ module.exports = {
         const url = extractUrl(raw);
 
         if (!url) {
-            return reply(`⊘ *Usage:* ${prefix}yt <youtube url>\n📝 *Audio:* ${prefix}yt <url> -a`);
+            return reply(`⊘ *Usage:* ${PREFIX}yt <youtube url>\n📝 *Audio:* ${PREFIX}yt <url> -a`);
         }
 
         await sock.sendMessage(m.chat, { react: { text: '📥', key: m.key } });
 
         try {
-            if (await sendFromApi(sock, m, url)) {
+            if (!engine.isPlaylistUrl(url) && await sendFromApi(sock, m, url, asAudio)) {
                 return sock.sendMessage(m.chat, { react: { text: '❤️‍🩹', key: m.key } });
             }
         } catch (error) {
