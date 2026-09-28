@@ -1,51 +1,35 @@
-const fetch = require('node-fetch');
+'use strict';
+
+const { request, pickUrl } = require('../../Plugin/prexzyMedia');
 
 module.exports = {
     name: 'yturld',
-    alias: [],
+    alias: ['ytaudio', 'ytmp3'],
     desc: 'Download YouTube audio as MP3',
     category: 'Download',
-     // ⭐ Reaction config
-    reactions: {
-        start: '🔍',
-        success: '🎤'
-    },
+    usage: '.yturld <YouTube URL>',
+    reactions: { start: '🔍', success: '🎤' },
 
+    execute: async (sock, m, { args, reply }) => {
+        const url = args.join(' ').match(/https?:\/\/(?:www\.|m\.|music\.)?(?:youtube\.com|youtu\.be)\/\S+/i)?.[0]?.replace(/[)\]>.,;!?]+$/, '');
+        if (!url) return reply('✘ Provide a YouTube URL');
 
-    execute: async (sock, m, { args, reply, quoted }) => {
         try {
-            // Get URL from args or quoted message
-            let url = args[0] || m.quoted?.text;
-            if (!url) return reply('✘ Provide a YouTube URL');
-
-            await sock.sendPresenceUpdate('composing', m.chat);
-
-            const apiUrl = `https://apis.prexzyvilla.site/download/ytaudio?url=${encodeURIComponent(url)}`;
-
-            // Fetch audio info
-            const res = await fetch(apiUrl);
-            if (!res.ok) return reply(`${prefix}⚉ API failed: ${resstatus}`);
-            const data = await res.json();
-
-            if (!data.download || !data.title) return reply('𓉤 Failed to get audio');
-
-            const audioUrl = data.download; // MP3 URL
-            const title = data.title.replace(/[^\w\s]/gi, '') || 'youtube_audio';
-
-            // Fetch actual MP3
-            const mp3Res = await fetch(audioUrl);
-            if (!mp3Res.ok) return reply('✘ Failed to download MP3');
-            const buffer = Buffer.from(await mp3Res.arrayBuffer());
+            await sock.sendPresenceUpdate?.('composing', m.chat);
+            const { data } = await request('ytmp3', url);
+            if (data?.status === false || data?.success === false) return reply('𓉤 Failed to get audio');
+            const audioUrl = pickUrl(data.download_url, data.download, data.url, data.result?.download_url, data.result?.url);
+            if (!audioUrl) return reply('𓉤 Failed to get audio');
+            const title = (data.info?.title || data.title || data.result?.title || 'youtube_audio').replace(/[^\w\s]/gi, '') || 'youtube_audio';
 
             await sock.sendMessage(m.chat, {
-                audio: buffer,
+                audio: { url: audioUrl },
                 mimetype: 'audio/mpeg',
                 fileName: `${title}.mp3`
             }, { quoted: m });
-
-        } catch (err) {
-            console.error('[YTAUDIO ERROR]', err);
-            reply('❌ Failed to download YouTube audio');
+        } catch (error) {
+            console.error('[YTAUDIO ERROR]', error.message || error);
+            return reply(`❌ Failed to download YouTube audio: ${error.message || error}`);
         }
     }
 };
