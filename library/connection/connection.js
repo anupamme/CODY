@@ -145,7 +145,7 @@ function hasLocalSession() {
     return fs.existsSync(path.join(SESSION_PATH, 'creds.json'));
 }
 
-async function createSocket(sessionId) {
+async function createSocket(sessionId = process.env.SESSION_ID) {
     if (sessionId && !hasLocalSession()) {
         console.log('🔑 No local session. Attempting SESSION_ID restore...');
         const restored = await decodeSession(sessionId);
