@@ -9,6 +9,21 @@ function pickUrl(...values) {
     return values.find(value => typeof value === 'string' && HTTP_URL.test(value)) || null;
 }
 
+/**
+ * Extracts a human-readable failure reason from a prexzyapis error envelope
+ * ({ status: false, message|msg|error: "..." }), or falls back to the HTTP
+ * status. Callers throw this so the bot reports *why* a download failed
+ * instead of a bare "no media returned".
+ */
+function apiError(data, status, fallback) {
+    const reason = [data?.message, data?.msg, data?.error, data?.reason]
+        .find(value => typeof value === 'string' && value.trim().length > 0);
+    const label = reason || fallback || `HTTP ${status || 'unknown'}`;
+    const error = new Error(label);
+    error.apiStatus = status;
+    return error;
+}
+
 function request(endpoint, sourceUrl, options = {}) {
     const url = `${API_BASE}${endpoint}?url=${encodeURIComponent(sourceUrl)}`;
     return axios.get(url, {
@@ -93,4 +108,4 @@ function firstInfo(data) {
     return data?.info || data?.result?.info || data?.data?.info || {};
 }
 
-module.exports = { request, pickUrl, collectMedia, firstInfo, mediaKind };
+module.exports = { request, pickUrl, collectMedia, firstInfo, mediaKind, apiError };
