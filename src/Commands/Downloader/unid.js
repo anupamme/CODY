@@ -13,10 +13,26 @@ function normalizeResult(data) {
         kind: String(item.type || '').startsWith('m4') ? 'audio' : 'video',
         url: item.original_url || item.url
     })).filter(item => item.url);
+    const video = root.without_water_mark_mp4 || root.video || root.video_url;
+    const audio = root.mp3 || root.audio || root.audio_url;
+    if (video) media.push({ kind: 'video', url: video });
+    if (audio) media.push({ kind: 'audio', url: audio });
+    const images = Array.isArray(root.pics)
+        ? root.pics
+            .map(item => typeof item === 'string' ? item : item?.url)
+            .filter(item => {
+                try {
+                    const parsed = new URL(item);
+                    return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+                } catch {
+                    return false;
+                }
+            })
+        : [];
     return {
         video: media.find(item => item.kind === 'video')?.url || null,
         audio: media.find(item => item.kind === 'audio')?.url || null,
-        images: [], media,
+        images, media,
         platform: data?.platform || root.platform || 'Media',
         author: root.author || root.username || root.uploader || data?.creator || '',
         title: String(root.desc || root.description || root.title || data?.message || '').trim(),
