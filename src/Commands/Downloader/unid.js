@@ -18,7 +18,16 @@ function normalizeResult(data) {
     if (video) media.push({ kind: 'video', url: video });
     if (audio) media.push({ kind: 'audio', url: audio });
     const images = Array.isArray(root.pics)
-        ? root.pics.map(item => typeof item === 'string' ? item : item?.url).filter(Boolean)
+        ? root.pics
+            .map(item => typeof item === 'string' ? item : item?.url)
+            .filter(item => {
+                try {
+                    const parsed = new URL(item);
+                    return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+                } catch {
+                    return false;
+                }
+            })
         : [];
     return {
         video: media.find(item => item.kind === 'video')?.url || null,
