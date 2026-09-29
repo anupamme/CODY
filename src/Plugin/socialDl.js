@@ -74,13 +74,12 @@ async function downloadFacebook(url, format = 'mp4') {
     return { buffer, mimetype: audio ? 'audio/mpeg' : 'video/mp4', extension };
 }
 
-module.exports = { loadSocialDl, downloadYouTube, downloadUniversal, downloadTikTok, downloadInstagram, downloadFacebook, safeDownloadError };
-
 module.exports = {
     loadSocialDl,
     downloadYouTube,
     downloadUniversal,
     downloadTikTok,
     downloadInstagram,
-    downloadFacebook
+    downloadFacebook,
+    safeDownloadError
 };
