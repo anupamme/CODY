@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-27T17:41:35.875Z",
+  "generatedAt": "2026-09-29T23:02:00.929Z",
   "root": ".",
   "commandCount": 534,
   "syntaxFailures": 0,
-  "brokenCount": 124,
+  "brokenCount": 123,
   "duplicateNames": [
     {
       "name": "!",
@@ -248,7 +248,6 @@
       "❚",
       "𓊈𝑽꯭𝑰꯭𝑷ࠡࠡࠡࠡࠢ𓊉",
       "®",
-      "Instagram",
       "Upstream",
       "music",
       "play",
@@ -680,6 +679,7 @@
     "downloader": [
       "fbstream",
       "fb",
+      "ig",
       "yts",
       "tiktok",
       "video"
@@ -3954,8 +3954,7 @@
       "category": "downloader",
       "file": "src/Commands/Downloader/FB streaming.js",
       "imports": [
-        "axios",
-        "../../../settings/config"
+        "../../Plugin/socialDl"
       ],
       "syntax": true,
       "syntaxError": "",
@@ -3971,8 +3970,7 @@
       "category": "downloader",
       "file": "src/Commands/Downloader/Facebook.js",
       "imports": [
-        "axios",
-        "../../../settings/config"
+        "../../Plugin/socialDl"
       ],
       "syntax": true,
       "syntaxError": "",
@@ -3980,15 +3978,21 @@
       "lastError": ""
     },
     {
-      "name": "Instagram",
-      "aliases": [],
-      "category": "Unknown",
+      "name": "ig",
+      "aliases": [
+        "instagram",
+        "insta",
+        "igdl"
+      ],
+      "category": "downloader",
       "file": "src/Commands/Downloader/Instagram.js",
-      "imports": [],
+      "imports": [
+        "../../Plugin/socialDl"
+      ],
       "syntax": true,
       "syntaxError": "",
-      "broken": true,
-      "lastError": "missing module.exports"
+      "broken": false,
+      "lastError": ""
     },
     {
       "name": "mediafire",
@@ -4047,7 +4051,7 @@
       "category": "downloader",
       "file": "src/Commands/Downloader/Stream YouTube.js",
       "imports": [
-        "axios"
+        "../../Plugin/socialDl"
       ],
       "syntax": true,
       "syntaxError": "",
@@ -4064,7 +4068,7 @@
       "category": "downloader",
       "file": "src/Commands/Downloader/Tikd.js",
       "imports": [
-        "axios"
+        "../../Plugin/socialDl"
       ],
       "syntax": true,
       "syntaxError": "",
@@ -4096,7 +4100,7 @@
       "file": "src/Commands/Downloader/Video.js",
       "imports": [
         "yt-search",
-        "axios"
+        "../../Plugin/socialDl"
       ],
       "syntax": true,
       "syntaxError": "",
@@ -4105,11 +4109,14 @@
     },
     {
       "name": "yturld",
-      "aliases": [],
+      "aliases": [
+        "ytaudio",
+        "ytmp3"
+      ],
       "category": "Download",
       "file": "src/Commands/Downloader/Yturl.js",
       "imports": [
-        "node-fetch"
+        "../../Plugin/socialDl"
       ],
       "syntax": true,
       "syntaxError": "",
@@ -4166,7 +4173,7 @@
       "category": "Downloader",
       "file": "src/Commands/Downloader/ttld.js",
       "imports": [
-        "axios"
+        "../../Plugin/socialDl"
       ],
       "syntax": true,
       "syntaxError": "",
@@ -4183,7 +4190,7 @@
       "category": "Search",
       "file": "src/Commands/Downloader/unid.js",
       "imports": [
-        "axios"
+        "../../Plugin/socialDl"
       ],
       "syntax": true,
       "syntaxError": "",
@@ -4200,10 +4207,7 @@
       "category": "Search",
       "file": "src/Commands/Downloader/ytd.js",
       "imports": [
-        "axios",
-        "node:fs",
-        "node:path",
-        "../../Plugin/ytsaveEngine.js"
+        "../../Plugin/socialDl"
       ],
       "syntax": true,
       "syntaxError": "",
