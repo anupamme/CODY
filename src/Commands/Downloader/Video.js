@@ -1,5 +1,6 @@
 const yts = require('yt-search');
 const axios = require('axios');
+const { request, pickUrl, apiError } = require('../../Plugin/prexzyMedia');
 
 module.exports = {
     name: 'video',
@@ -44,25 +45,23 @@ module.exports = {
 //✪ _*Downloading video...*_`
         //    }, { quoted: m });
 
-            const apiUrl = `https://yt-dl.officialhectormanuel.workers.dev/?url=${encodeURIComponent(vid.url)}`;
-            const res = await axios.get(apiUrl, { headers: { Accept: "application/json" } });
+            const { data, status } = await request('ytmp4', vid.url);
 
-            const data = res.data;
-
-            // DEBUG: log what quality keys the API actually returned
-            console.log('[VIDEO QUALITIES AVAILABLE]', Object.keys(data?.videos || {}));
-
-            // Cap at 854 (lower than 1080p) — the host was hitting ENOSPC
-            // (disk full) on larger files, so trading resolution for a
-            // smaller download/write footprint as a workaround.
-            const videoDownloadUrl = pickBestQuality(data?.videos, 854);
-
-            console.log('[VIDEO QUALITY SELECTED]', videoDownloadUrl);
+            // The prexzy ytmp4 endpoint returns a ready-to-stream mp4 link
+            // (top-level download_url, plus per-quality entries as fallback).
+            const videoDownloadUrl = pickUrl(
+                data?.download_url,
+                data?.url,
+                ...(Array.isArray(data?.qualities) ? data.qualities : [])
+                    .map(q => q?.download_url || q?.url)
+                    .filter(u => typeof u === 'string')
+            );
 
             if (!data?.status || !videoDownloadUrl) {
                 await sock.sendMessage(m.chat, {
                     react: { text: "🤧", key: m.key }
                 });
+                if (!data?.status) throw apiError(data, status);
                 return reply("✘ Failed to download video");
             }
 
@@ -71,7 +70,7 @@ module.exports = {
             });
 
             // Download to buffer for reliable playback (URL streaming fails in WhatsApp)
-            const videoBuffer = await axios.get(videoDownloadUrl, { responseType: 'arraybuffer' });
+            const videoBuffer = await axios.get(videoDownloadUrl, { responseType: 'arraybuffer', timeout: 120000 });
 
             const channelHandle = extractChannelHandle(vid.author);
 
@@ -96,33 +95,6 @@ module.exports = {
         }
     }
 };
-
-// Picks the highest-quality video URL from a { "256": url, "1920": url, ... }
-// map, where keys are pixel widths, not quality labels. Filters out any
-// non-numeric keys defensively, sorts descending, and returns the first
-// one at or below maxWidth. Falls back to the single highest available
-// width if everything on offer exceeds the cap (better than returning
-// nothing), and to any value at all if keys are somehow non-numeric.
-function pickBestQuality(videos, maxWidth) {
-    if (!videos || typeof videos !== 'object') return null;
-
-    const widthEntries = Object.entries(videos)
-        .map(([key, url]) => ({ width: parseInt(key, 10), url }))
-        .filter(entry => !isNaN(entry.width))
-        .sort((a, b) => b.width - a.width); // descending, highest first
-
-    if (!widthEntries.length) {
-        // Keys weren't numeric widths at all — just grab something
-        return Object.values(videos)[0] || null;
-    }
-
-    const withinCap = widthEntries.find(entry => entry.width <= maxWidth);
-    if (withinCap) return withinCap.url;
-
-    // Every available width exceeds the cap — take the lowest of the
-    // over-cap options rather than the largest, to stay closer to target
-    return widthEntries[widthEntries.length - 1].url;
-}
 
 // Pulls the @handle out of the channel URL when one exists (author.url like
 // https://youtube.com/@crysnovax), falling back to the display name if the

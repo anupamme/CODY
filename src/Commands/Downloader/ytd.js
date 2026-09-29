@@ -1,96 +1,88 @@
-// yt.js — Downloads YouTube media.
-// Primary path: hosted API. Fallback: local `ytsave` (yt-dlp) engine, which
-// keeps .yt working when the API is rate-limited or offline.
-const fs = require('node:fs');
-const path = require('node:path');
-
-const engine = require('../../Plugin/ytsaveEngine.js');
-const { request, pickUrl } = require('../../Plugin/prexzyMedia');
+// yt.js — Downloads YouTube media through the prexzyapis.com hosted API.
+//
+// The old local `ytsave` (yt-dlp) fallback was removed: it kept dying with
+// "yt-dlp exited with code 1" on datacenter IPs because YouTube blocks them
+// (see vendor/yt-dlp.conf history). The prexzy API resolves those URLs fine,
+// so this command is now API-only and transparent about failures.
+const { request, pickUrl, apiError } = require('../../Plugin/prexzyMedia');
 const PREFIX = process.env.PREFIX || '.';
 
 const YOUTUBE_URL = /https?:\/\/(?:www\.|m\.|music\.)?(?:youtube\.com|youtu\.be)\/\S+/i;
-const MAX_PLAYLIST_ITEMS = 10;
 
 function extractUrl(text) {
     const match = String(text || '').match(YOUTUBE_URL);
     return match ? match[0].replace(/[)>\].,;!?]+$/, '') : null;
 }
 
-function sendKeysFor(file) {
-    const extension = path.extname(file).toLowerCase();
-    if (extension === '.mp3') return { key: 'audio', mimetype: 'audio/mpeg' };
-    if (extension === '.m4a') return { key: 'audio', mimetype: 'audio/mp4' };
-    return { key: 'video', mimetype: 'video/mp4' };
+function fileNameFor(title, ext) {
+    const safe = String(title || 'YouTube Media').replace(/[^a-zA-Z0-9]/g, '_').slice(0, 60);
+    return `${safe}.${ext === 'audio' ? 'mp3' : 'mp4'}`;
 }
 
+/**
+ * Sends one prexzyapis media response to the chat. Accepts the primary
+ * `download_url` or any per-quality entry from the `qualities` array.
+ * Returns true on success, false when the payload holds no usable URL.
+ */
 async function sendFromApi(sock, m, url, asAudio = false) {
-    const { data } = await request(asAudio ? 'ytmp3' : 'ytmp4', url);
-    if (data?.status === false || data?.success === false) return false;
+    const { data, status } = await request(asAudio ? 'ytmp3' : 'ytmp4', url);
+    if (data?.status === false || data?.success === false) throw apiError(data, status);
 
     const info = data.info || data.result?.info || {};
-    const mediaUrl = pickUrl(
+    const title = info.title || data.title || data.result?.title || 'YouTube Media';
+
+    // Primary link first, then every quality fallback the API offers. googlevideo
+    // links expire quickly and can 403 one-at-a-time, so keep trying until one
+    // actually sends.
+    const candidates = [
         data.download_url,
         data.url,
         data.result?.download_url,
         data.result?.url,
-        data.data?.download_url
-    );
-    if (!mediaUrl) return false;
+        data.data?.download_url,
+        ...(Array.isArray(data.qualities) ? data.qualities : [])
+            .map(q => q?.download_url || q?.url)
+            .filter(u => typeof u === 'string')
+    ];
 
-    const title = info.title || data.title || data.result?.title || 'YouTube Media';
-    if (asAudio) {
-        await sock.sendMessage(m.chat, {
-            audio: { url: mediaUrl },
-            mimetype: 'audio/mpeg',
-            fileName: `${title.replace(/[^a-zA-Z0-9]/g, '_').slice(0, 60)}.mp3`
-        }, { quoted: m });
-    } else {
-        await sock.sendMessage(m.chat, {
-            video: { url: mediaUrl },
-            caption: `${title} · ${data.quality || info.quality || ''}`.trim(),
-            mimetype: 'video/mp4'
-        }, { quoted: m });
-    }
+    const failures = [];
+    for (const candidate of candidates) {
+        const mediaUrl = pickUrl(candidate);
+        if (!mediaUrl) continue;
 
-    return true;
-}
-
-async function sendLocal(sock, m, url, format) {
-    const result = engine.isPlaylistUrl(url)
-        ? await engine.downloadPlaylist(url, { format })
-        : await engine.downloadVideo(url, { format });
-
-    if (!result.files.length) throw new Error('yt-dlp finished without producing a file');
-
-    // A playlist can be arbitrarily long; send the head of it and drop the rest.
-    const files = result.files.slice(0, MAX_PLAYLIST_ITEMS);
-
-    try {
-        for (const file of files) {
-            const { key, mimetype } = sendKeysFor(file);
-
-            await sock.sendMessage(m.chat, {
-                [key]: fs.readFileSync(file),
-                mimetype,
-                ...(key === 'audio' ? { ptt: false } : {}),
-                fileName: path.basename(file)
-            }, { quoted: m });
+        try {
+            if (asAudio) {
+                await sock.sendMessage(m.chat, {
+                    audio: { url: mediaUrl },
+                    mimetype: 'audio/mpeg',
+                    fileName: fileNameFor(title, 'audio')
+                }, { quoted: m });
+            } else {
+                await sock.sendMessage(m.chat, {
+                    video: { url: mediaUrl },
+                    caption: `${title} · ${data.quality || info.quality || ''}`.trim(),
+                    mimetype: 'video/mp4'
+                }, { quoted: m });
+            }
+            return true;
+        } catch (error) {
+            failures.push(error.message || String(error));
         }
-
-        return files.length;
-    } finally {
-        // Never leave a failed upload's temp files behind.
-        engine.cleanup(result.files);
     }
+
+    if (failures.length) {
+        throw new Error(`media link failed: ${failures.join(' | ')}`);
+    }
+    return false;
 }
 
 module.exports = {
     name: 'yt',
     alias: ['youtube', 'ytdl', 'youtubedownload'],
-    desc: 'Download YouTube video or audio (hosted API, local yt-dlp fallback)',
+    desc: 'Download YouTube video or audio',
     category: 'Search',
     usage: `${PREFIX}yt <youtube url> [-a for mp3]`,
-    examples: ['.yt https://youtu.be/rsF9VaubHWM', '.yt https://youtu.be/rsF9VaubHWM -a'],
+    examples: [`.yt https://youtu.be/rsF9VaubHWM`, `.yt https://youtu.be/rsF9VaubHWM -a`],
 
     execute: async (sock, m, { args, reply }) => {
         const raw = (args.join(' ').trim()) || m.quoted?.body || m.quoted?.text || '';
@@ -104,26 +96,19 @@ module.exports = {
         await sock.sendMessage(m.chat, { react: { text: '📥', key: m.key } });
 
         try {
-            if (!engine.isPlaylistUrl(url) && await sendFromApi(sock, m, url, asAudio)) {
+            if (await sendFromApi(sock, m, url, asAudio)) {
                 return sock.sendMessage(m.chat, { react: { text: '❤️‍🩹', key: m.key } });
             }
+            await sock.sendMessage(m.chat, { react: { text: '❔', key: m.key } });
+            return reply(`⊘ *Download failed.*\nThe API returned no media link for this video.`);
         } catch (error) {
             console.error('[YT API]', error.message || error);
-        }
-
-        try {
-            await sendLocal(sock, m, url, asAudio ? 'mp3' : 'mp4');
-            await sock.sendMessage(m.chat, { react: { text: '❤️‍🩹', key: m.key } });
-        } catch (error) {
-            console.error('[YT ytsave]', error.message || error);
             await sock.sendMessage(m.chat, { react: { text: '❔', key: m.key } });
-            reply(`⊘ *Download failed.*\n${error.message}`);
+            reply(`⊘ *Download failed.*\n${error.message || error}`);
         }
     }
 };
 
 // Kept public for focused command-level tests; the bot router still uses execute().
 module.exports.extractUrl = extractUrl;
-module.exports.sendKeysFor = sendKeysFor;
 module.exports.sendFromApi = sendFromApi;
-module.exports.sendLocal = sendLocal;

@@ -1,6 +1,6 @@
 'use strict';
 
-const { request, pickUrl } = require('../../Plugin/prexzyMedia');
+const { request, pickUrl, apiError } = require('../../Plugin/prexzyMedia');
 
 module.exports = {
     name: 'yturld',
@@ -16,10 +16,10 @@ module.exports = {
 
         try {
             await sock.sendPresenceUpdate?.('composing', m.chat);
-            const { data } = await request('ytmp3', url);
-            if (data?.status === false || data?.success === false) return reply('𓉤 Failed to get audio');
+            const { data, status } = await request('ytmp3', url);
+            if (data?.status === false || data?.success === false) throw apiError(data, status);
             const audioUrl = pickUrl(data.download_url, data.download, data.url, data.result?.download_url, data.result?.url);
-            if (!audioUrl) return reply('𓉤 Failed to get audio');
+            if (!audioUrl) throw apiError(data, status, 'no download URL in response');
             const title = (data.info?.title || data.title || data.result?.title || 'youtube_audio').replace(/[^\w\s]/gi, '') || 'youtube_audio';
 
             await sock.sendMessage(m.chat, {

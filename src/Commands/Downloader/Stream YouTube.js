@@ -1,6 +1,6 @@
 'use strict';
 
-const { request, pickUrl } = require('../../Plugin/prexzyMedia');
+const { request, pickUrl, apiError } = require('../../Plugin/prexzyMedia');
 const PREFIX = process.env.PREFIX || '.';
 
 module.exports = {
@@ -16,11 +16,11 @@ module.exports = {
 
         await reply('✪ _*Downloading YouTube video...*_');
         try {
-            const { data } = await request('ytmp4', url);
-            if (data?.status === false || data?.success === false) throw new Error(data?.message || data?.msg || 'No media returned');
+            const { data, status } = await request('ytmp4', url);
+            if (data?.status === false || data?.success === false) throw apiError(data, status);
             const info = data.info || data.result?.info || {};
             const video = pickUrl(data.download_url, data.url, data.result?.download_url, data.result?.url, data.data?.download_url);
-            if (!video) throw new Error('No YouTube video URL returned');
+            if (!video) throw apiError(data, status, 'no download URL in response');
             const title = info.title || data.title || data.result?.title || 'YouTube Video';
             await sock.sendMessage(m.chat, {
                 video: { url: video },
