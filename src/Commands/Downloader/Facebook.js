@@ -1,15 +1,15 @@
 'use strict';
 
-const { request, collectMedia } = require('../../Plugin/prexzyMedia');
+const { downloadFacebook } = require('../../Plugin/socialDl');
 
 function findUrl(text) {
-    return String(text || '').match(/https?:\/\/[^\s]+facebook\.com[^\s]*/i)?.[0]?.replace(/[)\]>.,;!?]+$/, '') || null;
+    return String(text || '').match(/https?:\/\/[^\s]+(?:facebook\.com|fb\.watch)[^\s]*/i)?.[0]?.replace(/[)\]>.,;!?]+$/, '') || null;
 }
 
 module.exports = {
     name: 'fb',
     alias: ['facebook', 'fbdown'],
-    desc: 'Download Facebook video via Prexzy',
+    desc: 'Download Facebook video',
     category: 'downloader',
     usage: '.fb <Facebook URL>',
     owner: false,
@@ -24,22 +24,12 @@ module.exports = {
 
         await reply('_*✪ Downloading Facebook media...*_');
         try {
-            const { data } = await request('facebookv2', url);
-            if (data?.status === false || data?.success === false) throw new Error(data?.message || data?.msg || 'No media returned');
-            const media = collectMedia(data);
-            if (!media.length) throw new Error('No downloadable media found in facebookv2 response');
-
-            const title = data?.result?.desc || data?.result?.title || 'Facebook media';
-            for (const item of media) {
-                const caption = media.indexOf(item) === 0 ? `📘 *Facebook Downloader*\n\n${title}` : '';
-                if (item.kind === 'audio') {
-                    await sock.sendMessage(m.chat, { audio: { url: item.url }, mimetype: 'audio/mp4', caption }, { quoted: m });
-                } else if (item.kind === 'image') {
-                    await sock.sendMessage(m.chat, { image: { url: item.url }, caption }, { quoted: m });
-                } else {
-                    await sock.sendMessage(m.chat, { video: { url: item.url }, mimetype: 'video/mp4', caption }, { quoted: m });
-                }
-            }
+            const { buffer, mimetype } = await downloadFacebook(url);
+            await sock.sendMessage(m.chat, {
+                video: buffer,
+                mimetype,
+                caption: '📘 *Facebook Downloader*'
+            }, { quoted: m });
         } catch (error) {
             console.error('[FB DOWNLOAD]', error.message || error);
             return reply(`✘ Facebook download failed: ${error.message || error}`);
