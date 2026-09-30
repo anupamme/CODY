@@ -25,7 +25,7 @@ const renderYaml = `services:
 const appJson = `{
   "name": "CODY WhatsApp Bot",
   "description": "WhatsApp self-bot with AI, media editing, group management",
-  "repository": "https://github.com/crysnovax/CODY",
+  "repository": "https://github.com/crysnovax/CODY.git",
   "logo": "https://cdn.crysnovax.link/files/1778715435891-e17143f2-a3fa-4d16-b1b7-740d8e4fb7fb.jpeg",
   "keywords": ["whatsapp", "bot", "ai", "baileys"],
   "env": {
