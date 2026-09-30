@@ -1,7 +1,7 @@
 services:
   - type: web
     name: cody-ai
-    repo: https://github.com/crysnovax/CODY.git
+    repo: https://github.com/crysnovax/CODY
     branch: main
     runtime: node
     plan: free
