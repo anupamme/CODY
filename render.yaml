@@ -5,7 +5,8 @@ services:
     branch: main
     runtime: node
     plan: free
-    buildCommand: npm ci
+    # Skip third-party install hooks; CODY uses social-dl and does not require yt-dlp-exec.
+    buildCommand: npm ci --ignore-scripts
     startCommand: npm start
     healthCheckPath: /ping
     autoDeployTrigger: commit
